@@ -13,8 +13,6 @@ hdfd.db
 *.o
 *.a
 *.so
-*.mod
-*.sum
 
 # Folders
 _obj
