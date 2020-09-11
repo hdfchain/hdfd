@@ -14,15 +14,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/decred/dcrd/blockchain/chaingen"
-	"github.com/decred/dcrd/blockchain/stake"
-	"github.com/decred/dcrd/chaincfg"
-	"github.com/decred/dcrd/chaincfg/chainhash"
-	"github.com/decred/dcrd/database"
-	_ "github.com/decred/dcrd/database/ffldb"
-	"github.com/decred/dcrd/dcrutil"
-	"github.com/decred/dcrd/txscript"
-	"github.com/decred/dcrd/wire"
+	"github.com/hdfchain/hdfd/blockchain/chaingen"
+	"github.com/hdfchain/hdfd/blockchain/stake"
+	"github.com/hdfchain/hdfd/chaincfg"
+	"github.com/hdfchain/hdfd/chaincfg/chainhash"
+	"github.com/hdfchain/hdfd/database"
+	_ "github.com/hdfchain/hdfd/database/ffldb"
+	"github.com/hdfchain/hdfd/dcrutil"
+	"github.com/hdfchain/hdfd/txscript"
+	"github.com/hdfchain/hdfd/wire"
 )
 
 const (

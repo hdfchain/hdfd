@@ -10,11 +10,11 @@ import (
 	"encoding/hex"
 	"encoding/json"
 
-	"github.com/decred/dcrd/chaincfg/chainhash"
-	"github.com/decred/dcrd/dcrjson/v2"
-	"github.com/decred/dcrd/dcrutil"
-	"github.com/decred/dcrd/wire"
-	walletjson "github.com/decred/dcrwallet/rpc/jsonrpc/types"
+	"github.com/hdfchain/hdfd/chaincfg/chainhash"
+	"github.com/hdfchain/hdfd/dcrjson/v2"
+	"github.com/hdfchain/hdfd/dcrutil"
+	"github.com/hdfchain/hdfd/wire"
+	walletjson "github.com/hdfchain/hdfwallet/rpc/jsonrpc/types"
 )
 
 // SigHashType enumerates the available signature hashing types that the

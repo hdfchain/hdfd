@@ -1,4 +1,4 @@
-module github.com/decred/dcrd/chaincfg/chainhash
+module github.com/hdfchain/hdfd/chaincfg/chainhash
 
 go 1.11
 

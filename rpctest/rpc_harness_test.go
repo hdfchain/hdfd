@@ -14,12 +14,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/decred/dcrd/chaincfg"
-	"github.com/decred/dcrd/chaincfg/chainhash"
-	"github.com/decred/dcrd/dcrjson/v2"
-	"github.com/decred/dcrd/dcrutil"
-	"github.com/decred/dcrd/txscript"
-	"github.com/decred/dcrd/wire"
+	"github.com/hdfchain/hdfd/chaincfg"
+	"github.com/hdfchain/hdfd/chaincfg/chainhash"
+	"github.com/hdfchain/hdfd/dcrjson/v2"
+	"github.com/hdfchain/hdfd/dcrutil"
+	"github.com/hdfchain/hdfd/txscript"
+	"github.com/hdfchain/hdfd/wire"
 )
 
 const (

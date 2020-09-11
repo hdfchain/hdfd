@@ -1,9 +1,9 @@
 txsort
 ======
 
-[![Build Status](https://img.shields.io/travis/decred/dcrd.svg)](https://travis-ci.org/decred/dcrd)
+[![Build Status](https://img.shields.io/travis/decred/hdfd.svg)](https://travis-ci.org/decred/hdfd)
 [![ISC License](https://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](https://godoc.org/github.com/decred/dcrd/dcrutil/txsort)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](https://godoc.org/github.com/hdfchain/hdfd/dcrutil/txsort)
 
 Package txsort provides stable transaction sorting.
 
@@ -29,7 +29,7 @@ A comprehensive suite of tests is provided to ensure proper functionality.
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/decred/dcrd/dcrutil/txsort
+$ go get -u github.com/hdfchain/hdfd/dcrutil/txsort
 ```
 
 ## License

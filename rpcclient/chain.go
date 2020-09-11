@@ -11,12 +11,12 @@ import (
 	"encoding/json"
 	"errors"
 
-	"github.com/decred/dcrd/chaincfg/chainhash"
-	"github.com/decred/dcrd/dcrjson/v2"
-	"github.com/decred/dcrd/dcrutil"
-	"github.com/decred/dcrd/gcs"
-	"github.com/decred/dcrd/gcs/blockcf"
-	"github.com/decred/dcrd/wire"
+	"github.com/hdfchain/hdfd/chaincfg/chainhash"
+	"github.com/hdfchain/hdfd/dcrjson/v2"
+	"github.com/hdfchain/hdfd/dcrutil"
+	"github.com/hdfchain/hdfd/gcs"
+	"github.com/hdfchain/hdfd/gcs/blockcf"
+	"github.com/hdfchain/hdfd/wire"
 )
 
 // FutureGetBestBlockHashResult is a future promise to deliver the result of a
@@ -908,7 +908,7 @@ func (c *Client) EstimateSmartFeeAsync(confirmations int64, mode dcrjson.Estimat
 	return c.sendCmd(cmd)
 }
 
-// EstimateSmartFee returns an estimation of a transaction fee rate (in dcr/KB)
+// EstimateSmartFee returns an estimation of a transaction fee rate (in hdf/KB)
 // that new transactions should pay if they desire to be mined in up to
 // 'confirmations' blocks.
 //
@@ -917,7 +917,7 @@ func (c *Client) EstimateSmartFeeAsync(confirmations int64, mode dcrjson.Estimat
 // between probability of the transaction being mined in the given target
 // confirmation range and minimization of fees paid.
 //
-// As of 2019-01, only the default conservative mode is supported by dcrd.
+// As of 2019-01, only the default conservative mode is supported by hdfd.
 func (c *Client) EstimateSmartFee(confirmations int64, mode dcrjson.EstimateSmartFeeMode) (float64, error) {
 	return c.EstimateSmartFeeAsync(confirmations, mode).Receive()
 }

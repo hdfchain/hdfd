@@ -69,11 +69,11 @@ var (
 var (
 	ErrClientNotConnected = Error{
 		Code:    -9,
-		Message: "dcrd is not connected",
+		Message: "hdfd is not connected",
 	}
 	ErrClientInInitialDownload = Error{
 		Code:    -10,
-		Message: "dcrd is downloading blocks...",
+		Message: "hdfd is downloading blocks...",
 	}
 )
 
@@ -163,7 +163,7 @@ var (
 	}
 )
 
-// Errors that are specific to dcrd.
+// Errors that are specific to hdfd.
 var (
 	ErrNoWallet = Error{
 		Code:    -1,

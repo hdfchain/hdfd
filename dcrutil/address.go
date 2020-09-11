@@ -11,12 +11,12 @@ import (
 
 	"golang.org/x/crypto/ripemd160"
 
-	"github.com/decred/base58"
-	"github.com/decred/dcrd/chaincfg/v2/chainec"
-	"github.com/decred/dcrd/dcrec"
-	"github.com/decred/dcrd/dcrec/edwards"
-	"github.com/decred/dcrd/dcrec/secp256k1"
-	"github.com/decred/dcrd/dcrec/secp256k1/schnorr"
+	"github.com/hdfchain/base58"
+	"github.com/hdfchain/hdfd/chaincfg/v2/chainec"
+	"github.com/hdfchain/hdfd/dcrec"
+	"github.com/hdfchain/hdfd/dcrec/edwards"
+	"github.com/hdfchain/hdfd/dcrec/secp256k1"
+	"github.com/hdfchain/hdfd/dcrec/secp256k1/schnorr"
 )
 
 var (

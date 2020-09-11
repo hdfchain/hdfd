@@ -8,7 +8,7 @@
 
 package types
 
-import "github.com/decred/dcrd/dcrjson/v3"
+import "github.com/hdfchain/hdfd/dcrjson/v3"
 
 // AuthenticateCmd defines the authenticate JSON-RPC command.
 type AuthenticateCmd struct {

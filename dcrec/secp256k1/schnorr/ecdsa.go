@@ -11,8 +11,8 @@ import (
 	"io"
 	"math/big"
 
-	"github.com/decred/dcrd/chaincfg/chainhash"
-	"github.com/decred/dcrd/dcrec/secp256k1/v2"
+	"github.com/hdfchain/hdfd/chaincfg/chainhash"
+	"github.com/hdfchain/hdfd/dcrec/secp256k1/v2"
 )
 
 // scalarSize is the size of an encoded big endian scalar.

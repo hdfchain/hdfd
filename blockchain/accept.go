@@ -8,9 +8,9 @@ package blockchain
 import (
 	"fmt"
 
-	"github.com/decred/dcrd/blockchain/stake"
-	"github.com/decred/dcrd/database"
-	"github.com/decred/dcrd/dcrutil"
+	"github.com/hdfchain/hdfd/blockchain/stake"
+	"github.com/hdfchain/hdfd/database"
+	"github.com/hdfchain/hdfd/dcrutil"
 )
 
 // maybeAcceptBlock potentially accepts a block into the block chain and, if

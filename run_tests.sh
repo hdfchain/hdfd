@@ -29,7 +29,7 @@ set -ex
 
 # Default GOVERSION
 [[ ! "$GOVERSION" ]] && GOVERSION=1.12
-REPO=dcrd
+REPO=hdfd
 
 testrepo () {
   GO=go
@@ -82,6 +82,6 @@ $DOCKER pull decred/$DOCKER_IMAGE_TAG
 
 $DOCKER run --rm -it -v $(pwd):/src:Z decred/$DOCKER_IMAGE_TAG /bin/bash -c "\
   rsync -ra --filter=':- .gitignore'  \
-  /src/ /go/src/github.com/decred/$REPO/ && \
-  cd github.com/decred/$REPO/ && \
+  /src/ /go/src/github.com/hdfchain/$REPO/ && \
+  cd github.com/hdfchain/$REPO/ && \
   env GOVERSION=$GOVERSION GO111MODULE=on bash run_tests.sh"

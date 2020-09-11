@@ -10,10 +10,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/decred/dcrd/chaincfg/chainhash"
-	"github.com/decred/dcrd/txscript"
-	"github.com/decred/dcrd/wire"
-	"github.com/decred/slog"
+	"github.com/hdfchain/hdfd/chaincfg/chainhash"
+	"github.com/hdfchain/hdfd/txscript"
+	"github.com/hdfchain/hdfd/wire"
+	"github.com/hdfchain/slog"
 )
 
 const (

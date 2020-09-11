@@ -15,7 +15,7 @@ import (
 	"net"
 	"net/http"
 
-	"github.com/decred/dcrd/dcrjson/v2"
+	"github.com/hdfchain/hdfd/dcrjson/v2"
 
 	"github.com/btcsuite/go-socks/socks"
 )

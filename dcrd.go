@@ -14,14 +14,14 @@ import (
 	"runtime/debug"
 	"runtime/pprof"
 
-	"github.com/decred/dcrd/blockchain/indexers"
-	"github.com/decred/dcrd/internal/limits"
-	"github.com/decred/dcrd/internal/version"
+	"github.com/hdfchain/hdfd/blockchain/indexers"
+	"github.com/hdfchain/hdfd/internal/limits"
+	"github.com/hdfchain/hdfd/internal/version"
 )
 
 var cfg *config
 
-// winServiceMain is only invoked on Windows.  It detects when dcrd is running
+// winServiceMain is only invoked on Windows.  It detects when hdfd is running
 // as a service and reacts accordingly.
 var winServiceMain func() (bool, error)
 
@@ -31,7 +31,7 @@ var winServiceMain func() (bool, error)
 // service is not running.
 var serviceStartOfDayChan = make(chan *config, 1)
 
-// dcrdMain is the real main function for dcrd.  It is necessary to work around
+// dcrdMain is the real main function for hdfd.  It is necessary to work around
 // the fact that deferred functions do not run when os.Exit() is called.
 func dcrdMain() error {
 	// Load configuration and parse command line.  This function also

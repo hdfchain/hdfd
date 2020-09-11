@@ -9,7 +9,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/decred/dcrd/chaincfg/chainhash"
+	"github.com/hdfchain/hdfd/chaincfg/chainhash"
 )
 
 var (

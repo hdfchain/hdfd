@@ -15,9 +15,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/decred/dcrd/dcrjson/v3"
-	dcrdtypes "github.com/decred/dcrd/rpc/jsonrpc/types"
-	wallettypes "github.com/decred/dcrwallet/rpc/jsonrpc/types"
+	"github.com/hdfchain/hdfd/dcrjson/v3"
+	dcrdtypes "github.com/hdfchain/hdfd/rpc/jsonrpc/types"
+	wallettypes "github.com/hdfchain/hdfwallet/rpc/jsonrpc/types"
 )
 
 const (

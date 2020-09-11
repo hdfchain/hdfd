@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/decred/dcrd/chaincfg/chainhash"
+	"github.com/hdfchain/hdfd/chaincfg/chainhash"
 )
 
 func decodeHash(reversedHash string) chainhash.Hash {

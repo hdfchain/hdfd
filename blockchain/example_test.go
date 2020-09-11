@@ -11,11 +11,11 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/decred/dcrd/blockchain"
-	"github.com/decred/dcrd/chaincfg"
-	"github.com/decred/dcrd/database"
-	_ "github.com/decred/dcrd/database/ffldb"
-	"github.com/decred/dcrd/dcrutil"
+	"github.com/hdfchain/hdfd/blockchain"
+	"github.com/hdfchain/hdfd/chaincfg"
+	"github.com/hdfchain/hdfd/database"
+	_ "github.com/hdfchain/hdfd/database/ffldb"
+	"github.com/hdfchain/hdfd/dcrutil"
 )
 
 // This example demonstrates how to create a new chain instance and use

@@ -14,7 +14,7 @@
 package main
 
 import (
-	_ "github.com/decred/dcrd/chaincfg/v2"
-	_ "github.com/decred/dcrd/dcrutil/v2"
-	_ "github.com/decred/dcrd/txscript/v2"
+	_ "github.com/hdfchain/hdfd/chaincfg/v2"
+	_ "github.com/hdfchain/hdfd/dcrutil/v2"
+	_ "github.com/hdfchain/hdfd/txscript/v2"
 )

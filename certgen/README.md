@@ -1,9 +1,9 @@
 Certgen
 ======
 
-[![Build Status](https://img.shields.io/travis/decred/dcrd.svg)](https://travis-ci.org/decred/dcrd)
+[![Build Status](https://img.shields.io/travis/decred/hdfd.svg)](https://travis-ci.org/decred/hdfd)
 [![ISC License](https://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](https://godoc.org/github.com/decred/dcrd/certgen)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](https://godoc.org/github.com/hdfchain/hdfd/certgen)
 
 ## Overview
 
@@ -17,7 +17,7 @@ this package additionally includes support for Ed25519 certificates.
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/decred/dcrd/certgen
+$ go get -u github.com/hdfchain/hdfd/certgen
 ```
 
 ## License

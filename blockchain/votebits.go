@@ -6,7 +6,7 @@
 package blockchain
 
 import (
-	"github.com/decred/dcrd/chaincfg"
+	"github.com/hdfchain/hdfd/chaincfg"
 )
 
 // deploymentChecker provides a thresholdConditionChecker which can be used to

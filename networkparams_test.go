@@ -9,9 +9,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/decred/base58"
-	"github.com/decred/dcrd/blockchain"
-	"github.com/decred/dcrd/chaincfg"
+	"github.com/hdfchain/base58"
+	"github.com/hdfchain/hdfd/blockchain"
+	"github.com/hdfchain/hdfd/chaincfg"
 )
 
 // checkPowLimitsAreConsistent ensures PowLimit and PowLimitBits are consistent

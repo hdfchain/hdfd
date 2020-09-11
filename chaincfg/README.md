@@ -1,14 +1,14 @@
 chaincfg
 ========
 
-[![Build Status](https://img.shields.io/travis/decred/dcrd.svg)](https://travis-ci.org/decred/dcrd)
+[![Build Status](https://img.shields.io/travis/decred/hdfd.svg)](https://travis-ci.org/decred/hdfd)
 [![ISC License](https://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](https://godoc.org/github.com/decred/dcrd/chaincfg)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](https://godoc.org/github.com/hdfchain/hdfd/chaincfg)
 
 Package chaincfg defines chain configuration parameters for the four standard
 Decred networks.
 
-Although this package was primarily written for dcrd, it has intentionally been
+Although this package was primarily written for hdfd, it has intentionally been
 designed so it can be used as a standalone package for any projects needing to
 use parameters for the standard Decred networks or for projects needing to
 define their own network.
@@ -23,8 +23,8 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/decred/dcrd/dcrutil"
-	"github.com/decred/dcrd/chaincfg"
+	"github.com/hdfchain/hdfd/dcrutil"
+	"github.com/hdfchain/hdfd/chaincfg"
 )
 
 var testnet = flag.Bool("testnet", false, "operate on the testnet Decred network")
@@ -55,7 +55,7 @@ func main() {
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/decred/dcrd/chaincfg
+$ go get -u github.com/hdfchain/hdfd/chaincfg
 ```
 
 ## License

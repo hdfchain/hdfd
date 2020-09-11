@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/decred/dcrd/blockchain/chaingen"
-	"github.com/decred/dcrd/chaincfg"
+	"github.com/hdfchain/hdfd/blockchain/chaingen"
+	"github.com/hdfchain/hdfd/chaincfg"
 )
 
 // TestStakeVersion ensures that the stake version field in the block header is

@@ -1,9 +1,9 @@
 indexers
 ========
 
-[![Build Status](https://travis-ci.org/decred/dcrd.png?branch=master)](https://travis-ci.org/decred/dcrd)
+[![Build Status](https://travis-ci.org/decred/hdfd.png?branch=master)](https://travis-ci.org/decred/hdfd)
 [![ISC License](https://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://godoc.org/github.com/decred/dcrd/blockchain/indexers?status.png)](https://godoc.org/github.com/decred/dcrd/blockchain/indexers)
+[![GoDoc](https://godoc.org/github.com/hdfchain/hdfd/blockchain/indexers?status.png)](https://godoc.org/github.com/hdfchain/hdfd/blockchain/indexers)
 
 Package indexers implements optional block chain indexes.
 
@@ -30,7 +30,7 @@ via an RPC interface.
 ## Installation
 
 ```bash
-$ go get -u github.com/decred/dcrd/blockchain/indexers
+$ go get -u github.com/hdfchain/hdfd/blockchain/indexers
 ```
 
 ## License

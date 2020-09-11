@@ -16,12 +16,12 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/decred/dcrd/dcrjson/v3"
-	"github.com/decred/dcrd/dcrutil"
-	"github.com/decred/dcrd/internal/version"
+	"github.com/hdfchain/hdfd/dcrjson/v3"
+	"github.com/hdfchain/hdfd/dcrutil"
+	"github.com/hdfchain/hdfd/internal/version"
 
-	dcrdtypes "github.com/decred/dcrd/rpc/jsonrpc/types"
-	wallettypes "github.com/decred/dcrwallet/rpc/jsonrpc/types"
+	dcrdtypes "github.com/hdfchain/hdfd/rpc/jsonrpc/types"
+	wallettypes "github.com/hdfchain/hdfwallet/rpc/jsonrpc/types"
 
 	flags "github.com/jessevdk/go-flags"
 )
@@ -34,14 +34,14 @@ const (
 )
 
 var (
-	dcrdHomeDir            = dcrutil.AppDataDir("dcrd", false)
-	dcrctlHomeDir          = dcrutil.AppDataDir("dcrctl", false)
-	dcrwalletHomeDir       = dcrutil.AppDataDir("dcrwallet", false)
-	defaultConfigFile      = filepath.Join(dcrctlHomeDir, "dcrctl.conf")
+	dcrdHomeDir            = dcrutil.AppDataDir("hdfd", false)
+	hdfctlHomeDir          = dcrutil.AppDataDir("hdfctl", false)
+	hdfwalletHomeDir       = dcrutil.AppDataDir("hdfwallet", false)
+	defaultConfigFile      = filepath.Join(hdfctlHomeDir, "hdfctl.conf")
 	defaultRPCServer       = "localhost"
 	defaultWalletRPCServer = "localhost"
 	defaultRPCCertFile     = filepath.Join(dcrdHomeDir, "rpc.cert")
-	defaultWalletCertFile  = filepath.Join(dcrwalletHomeDir, "rpc.cert")
+	defaultWalletCertFile  = filepath.Join(hdfwalletHomeDir, "rpc.cert")
 )
 
 // listCommands categorizes and lists all of the usable commands along with
@@ -103,7 +103,7 @@ func listCommands() {
 	}
 }
 
-// config defines the configuration options for dcrctl.
+// config defines the configuration options for hdfctl.
 //
 // See loadConfig for details on the configuration load process.
 type config struct {
@@ -352,17 +352,17 @@ func loadConfig() (*config, []string, error) {
 }
 
 // createDefaultConfig creates a basic config file at the given destination path.
-// For this it tries to read the dcrd config file at its default path, and extract
+// For this it tries to read the hdfd config file at its default path, and extract
 // the RPC user and password from it.
 func createDefaultConfigFile(destinationPath string) error {
-	// Nothing to do when there is no existing dcrd conf file at the default
+	// Nothing to do when there is no existing hdfd conf file at the default
 	// path to extract the details from.
-	dcrdConfigPath := filepath.Join(dcrdHomeDir, "dcrd.conf")
+	dcrdConfigPath := filepath.Join(dcrdHomeDir, "hdfd.conf")
 	if !fileExists(dcrdConfigPath) {
 		return nil
 	}
 
-	// Read dcrd.conf from its default path
+	// Read hdfd.conf from its default path
 	dcrdConfigFile, err := os.Open(dcrdConfigPath)
 	if err != nil {
 		return err

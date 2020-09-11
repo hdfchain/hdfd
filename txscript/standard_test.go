@@ -11,11 +11,11 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/decred/dcrd/chaincfg/chainhash"
-	"github.com/decred/dcrd/chaincfg/v2"
-	"github.com/decred/dcrd/dcrec"
-	"github.com/decred/dcrd/dcrec/secp256k1"
-	"github.com/decred/dcrd/dcrutil/v2"
+	"github.com/hdfchain/hdfd/chaincfg/chainhash"
+	"github.com/hdfchain/hdfd/chaincfg/v2"
+	"github.com/hdfchain/hdfd/dcrec"
+	"github.com/hdfchain/hdfd/dcrec/secp256k1"
+	"github.com/hdfchain/hdfd/dcrutil/v2"
 )
 
 // mainNetParams is an instance of the main network parameters and is shared

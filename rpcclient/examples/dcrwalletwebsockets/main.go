@@ -12,8 +12,8 @@ import (
 	"time"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/decred/dcrd/dcrutil"
-	"github.com/decred/dcrd/rpcclient/v2"
+	"github.com/hdfchain/hdfd/dcrutil"
+	"github.com/hdfchain/hdfd/rpcclient/v2"
 )
 
 func main() {
@@ -28,8 +28,8 @@ func main() {
 		},
 	}
 
-	// Connect to local dcrwallet RPC server using websockets.
-	certHomeDir := dcrutil.AppDataDir("dcrwallet", false)
+	// Connect to local hdfwallet RPC server using websockets.
+	certHomeDir := dcrutil.AppDataDir("hdfwallet", false)
 	certs, err := ioutil.ReadFile(filepath.Join(certHomeDir, "rpc.cert"))
 	if err != nil {
 		log.Fatal(err)

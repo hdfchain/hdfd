@@ -8,8 +8,8 @@ package txscript
 import (
 	"testing"
 
-	"github.com/decred/dcrd/chaincfg/chainhash"
-	"github.com/decred/dcrd/wire"
+	"github.com/hdfchain/hdfd/chaincfg/chainhash"
+	"github.com/hdfchain/hdfd/wire"
 )
 
 // TestBadPC sets the pc to a deliberately bad result then confirms that Step

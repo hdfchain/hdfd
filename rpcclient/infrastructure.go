@@ -28,7 +28,7 @@ import (
 	"github.com/btcsuite/go-socks/socks"
 	"github.com/gorilla/websocket"
 
-	"github.com/decred/dcrd/dcrjson/v2"
+	"github.com/hdfchain/hdfd/dcrjson/v2"
 )
 
 var (

@@ -7,7 +7,7 @@ package chaincfg
 import (
 	"testing"
 
-	"github.com/decred/dcrd/wire"
+	"github.com/hdfchain/hdfd/wire"
 )
 
 var (

@@ -8,7 +8,7 @@ import (
 	"bytes"
 	"sort"
 
-	"github.com/decred/dcrd/chaincfg/chainhash"
+	"github.com/hdfchain/hdfd/chaincfg/chainhash"
 )
 
 // nodeHeightSorter implements sort.Interface to allow a slice of nodes to

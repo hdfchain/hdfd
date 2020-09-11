@@ -10,15 +10,15 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"github.com/decred/dcrd/blockchain"
-	"github.com/decred/dcrd/blockchain/indexers"
-	"github.com/decred/dcrd/database"
-	"github.com/decred/dcrd/internal/limits"
-	"github.com/decred/slog"
+	"github.com/hdfchain/hdfd/blockchain"
+	"github.com/hdfchain/hdfd/blockchain/indexers"
+	"github.com/hdfchain/hdfd/database"
+	"github.com/hdfchain/hdfd/internal/limits"
+	"github.com/hdfchain/slog"
 )
 
 const (
-	// blockDbNamePrefix is the prefix for the dcrd block database.
+	// blockDbNamePrefix is the prefix for the hdfd block database.
 	blockDbNamePrefix = "blocks"
 )
 

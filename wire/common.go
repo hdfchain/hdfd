@@ -13,7 +13,7 @@ import (
 	"math"
 	"time"
 
-	"github.com/decred/dcrd/chaincfg/chainhash"
+	"github.com/hdfchain/hdfd/chaincfg/chainhash"
 )
 
 const (

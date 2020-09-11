@@ -21,25 +21,25 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/decred/dcrd/addrmgr"
-	"github.com/decred/dcrd/blockchain"
-	"github.com/decred/dcrd/blockchain/indexers"
-	"github.com/decred/dcrd/blockchain/stake"
-	"github.com/decred/dcrd/chaincfg"
-	"github.com/decred/dcrd/chaincfg/chainhash"
-	"github.com/decred/dcrd/connmgr"
-	"github.com/decred/dcrd/database"
-	"github.com/decred/dcrd/dcrutil"
-	"github.com/decred/dcrd/fees"
-	"github.com/decred/dcrd/gcs"
-	"github.com/decred/dcrd/gcs/blockcf"
-	"github.com/decred/dcrd/internal/version"
-	"github.com/decred/dcrd/lru"
-	"github.com/decred/dcrd/mempool/v2"
-	"github.com/decred/dcrd/mining"
-	"github.com/decred/dcrd/peer"
-	"github.com/decred/dcrd/txscript"
-	"github.com/decred/dcrd/wire"
+	"github.com/hdfchain/hdfd/addrmgr"
+	"github.com/hdfchain/hdfd/blockchain"
+	"github.com/hdfchain/hdfd/blockchain/indexers"
+	"github.com/hdfchain/hdfd/blockchain/stake"
+	"github.com/hdfchain/hdfd/chaincfg"
+	"github.com/hdfchain/hdfd/chaincfg/chainhash"
+	"github.com/hdfchain/hdfd/connmgr"
+	"github.com/hdfchain/hdfd/database"
+	"github.com/hdfchain/hdfd/dcrutil"
+	"github.com/hdfchain/hdfd/fees"
+	"github.com/hdfchain/hdfd/gcs"
+	"github.com/hdfchain/hdfd/gcs/blockcf"
+	"github.com/hdfchain/hdfd/internal/version"
+	"github.com/hdfchain/hdfd/lru"
+	"github.com/hdfchain/hdfd/mempool/v2"
+	"github.com/hdfchain/hdfd/mining"
+	"github.com/hdfchain/hdfd/peer"
+	"github.com/hdfchain/hdfd/txscript"
+	"github.com/hdfchain/hdfd/wire"
 )
 
 const (
@@ -71,7 +71,7 @@ const (
 var (
 	// userAgentName is the user agent name and is used to help identify
 	// ourselves to other Decred peers.
-	userAgentName = "dcrd"
+	userAgentName = "hdfd"
 
 	// userAgentVersion is the user agent version and is used to help
 	// identify ourselves to other peers.
@@ -2262,7 +2262,7 @@ out:
 			// listen port?
 			// XXX this assumes timeout is in seconds.
 			listenPort, err := s.nat.AddPortMapping("tcp", int(lport), int(lport),
-				"dcrd listen port", 20*60)
+				"hdfd listen port", 20*60)
 			if err != nil {
 				srvrLog.Warnf("can't add UPnP port mapping: %v", err)
 			}
@@ -2322,7 +2322,7 @@ func standardScriptVerifyFlags(chain *blockchain.BlockChain) (txscript.ScriptFla
 	return scriptFlags, nil
 }
 
-// newServer returns a new dcrd server configured to listen on addr for the
+// newServer returns a new hdfd server configured to listen on addr for the
 // Decred network type specified by chainParams.  Use start to begin accepting
 // connections from peers.
 func newServer(listenAddrs []string, db database.DB, chainParams *chaincfg.Params, dataDir string, interrupt <-chan struct{}) (*server, error) {

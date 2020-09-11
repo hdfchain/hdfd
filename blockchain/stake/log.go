@@ -6,7 +6,7 @@
 package stake
 
 import (
-	"github.com/decred/slog"
+	"github.com/hdfchain/slog"
 )
 
 // log is a logger that is initialized with no output filters.  This

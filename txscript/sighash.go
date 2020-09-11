@@ -10,8 +10,8 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/decred/dcrd/chaincfg/chainhash"
-	"github.com/decred/dcrd/wire"
+	"github.com/hdfchain/hdfd/chaincfg/chainhash"
+	"github.com/hdfchain/hdfd/wire"
 )
 
 // SigHashType represents hash type bits at the end of a signature.

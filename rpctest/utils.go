@@ -9,8 +9,8 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/decred/dcrd/dcrjson/v2"
-	"github.com/decred/dcrd/rpcclient/v2"
+	"github.com/hdfchain/hdfd/dcrjson/v2"
+	"github.com/hdfchain/hdfd/rpcclient/v2"
 )
 
 // JoinType is an enum representing a particular type of "node join". A node

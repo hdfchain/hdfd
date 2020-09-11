@@ -9,7 +9,7 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/decred/dcrd/bech32"
+	"github.com/hdfchain/hdfd/bech32"
 )
 
 // This example demonstrates how to decode a bech32 encoded string.
@@ -33,7 +33,7 @@ func ExampleDecode() {
 	fmt.Println("Decoded 8bpe Data:", hex.EncodeToString(decoded8bits))
 
 	// Output:
-	// Decoded human-readable part: dcr
+	// Decoded human-readable part: hdf
 	// Decoded Data: 010e140f070d1a001912060b0d081504140311021d030c1d03040f1814060e1e160e140f070d1a001912060b0d081504140311021d030c1d03040f1814060e1e16
 	// Decoded 8bpe Data: 0ba8f3b740cc8cb6a2a4a0e22e8d9d191f8a19deb3a8f3b740cc8cb6a2a4a0e22e8d9d191f8a19deb0
 }

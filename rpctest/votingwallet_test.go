@@ -11,8 +11,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/decred/dcrd/chaincfg"
-	"github.com/decred/dcrd/rpcclient/v2"
+	"github.com/hdfchain/hdfd/chaincfg"
+	"github.com/hdfchain/hdfd/rpcclient/v2"
 )
 
 // testCanPassSVH tests whether the wallet can maintain the chain going past SVH

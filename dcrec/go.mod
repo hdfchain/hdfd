@@ -1,3 +1,3 @@
-module github.com/decred/dcrd/dcrec
+module github.com/hdfchain/hdfd/dcrec
 
 go 1.11

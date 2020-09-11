@@ -25,7 +25,7 @@ import (
 func TestLoadConfig(t *testing.T) {
 	_, _, err := loadConfig()
 	if err != nil {
-		t.Fatalf("Failed to load dcrd config: %s", err)
+		t.Fatalf("Failed to load hdfd config: %s", err)
 	}
 }
 
@@ -34,7 +34,7 @@ func TestLoadConfig(t *testing.T) {
 func TestDefaultAltDNSNames(t *testing.T) {
 	cfg, _, err := loadConfig()
 	if err != nil {
-		t.Fatalf("Failed to load dcrd config: %s", err)
+		t.Fatalf("Failed to load hdfd config: %s", err)
 	}
 	if len(cfg.AltDNSNames) != 0 {
 		t.Fatalf("Invalid default value for altdnsnames: %s", cfg.AltDNSNames)
@@ -47,7 +47,7 @@ func TestAltDNSNamesWithEnv(t *testing.T) {
 	os.Setenv("DCRD_ALT_DNSNAMES", "hostname1,hostname2")
 	cfg, _, err := loadConfig()
 	if err != nil {
-		t.Fatalf("Failed to load dcrd config: %s", err)
+		t.Fatalf("Failed to load hdfd config: %s", err)
 	}
 	hostnames := strings.Join(cfg.AltDNSNames, ",")
 	if hostnames != "hostname1,hostname2" {
@@ -63,7 +63,7 @@ func TestAltDNSNamesWithArg(t *testing.T) {
 	os.Args = append(os.Args, "--altdnsnames=\"hostname1,hostname2\"")
 	cfg, _, err := loadConfig()
 	if err != nil {
-		t.Fatalf("Failed to load dcrd config: %s", err)
+		t.Fatalf("Failed to load hdfd config: %s", err)
 	}
 	hostnames := strings.Join(cfg.AltDNSNames, ",")
 	if hostnames != "hostname1,hostname2" {

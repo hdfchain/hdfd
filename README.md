@@ -1,10 +1,10 @@
-dcrd
+hdfd
 ====
 
-[![Build Status](https://travis-ci.org/decred/dcrd.png?branch=master)](https://travis-ci.org/decred/dcrd)
+[![Build Status](https://travis-ci.org/decred/hdfd.png?branch=master)](https://travis-ci.org/decred/hdfd)
 [![ISC License](https://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](https://godoc.org/github.com/decred/dcrd)
-[![Go Report Card](https://goreportcard.com/badge/github.com/decred/dcrd)](https://goreportcard.com/report/github.com/decred/dcrd)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](https://godoc.org/github.com/hdfchain/hdfd)
+[![Go Report Card](https://goreportcard.com/badge/github.com/hdfchain/hdfd)](https://goreportcard.com/report/github.com/hdfchain/hdfd)
 
 ## Decred Overview
 
@@ -20,11 +20,11 @@ https://decred.org
 
 https://decred.org/downloads
 
-## What is dcrd?
+## What is hdfd?
 
-dcrd is a full node implementation of Decred written in Go (golang).
+hdfd is a full node implementation of Decred written in Go (golang).
 
-It acts as a fully-validating chain daemon for the Decred cryptocurrency.  dcrd
+It acts as a fully-validating chain daemon for the Decred cryptocurrency.  hdfd
 maintains the entire past transactional ledger of Decred and allows relaying of
 transactions to other Decred nodes around the world.
 
@@ -35,7 +35,7 @@ The software was originally forked from [btcd](https://github.com/btcsuite/btcd)
 which is a bitcoin full node implementation that is still under active
 development.  To gain the benefit of btcd's ongoing upgrades, including improved
 peer and connection handling, database optimization, and other blockchain
-related technology improvements, dcrd is continuously synced with the btcd
+related technology improvements, hdfd is continuously synced with the btcd
 codebase.
 
 ## What is a full node?
@@ -53,13 +53,13 @@ of software participating in the Decred peer network. For instance, there are
 and cryptographic proofs they require to function, as well as relay their
 transactions to the rest of the global network.
 
-## Why run dcrd?
+## Why run hdfd?
 
 As described in the previous section, the Decred cryptocurrency relies on having
 a peer-to-peer network of nodes that fully validate all transactions and blocks
 and then relay them to other full nodes.
 
-Running a full node with dcrd contributes to the overall security of the
+Running a full node with hdfd contributes to the overall security of the
 network, increases the available paths for transactions and blocks to relay,
 and helps ensure there are an adequate number of nodes available to serve
 lightweight clients, such as Simplified Payment Verification (SPV) wallets.
@@ -69,13 +69,13 @@ users of lightweight clients which could force them to have to rely on
 centralized services that significantly reduce privacy and are vulnerable to
 censorship.
 
-In terms of individual benefits, since dcrd fully validates every block and
+In terms of individual benefits, since hdfd fully validates every block and
 transaction, it provides the highest security and privacy possible when used in
 conjunction with a wallet that also supports directly connecting to it in full
-validation mode, such as [dcrwallet (CLI)](https://github.com/decred/dcrwallet)
-and [Decrediton (GUI)](https://github.com/decred/decrediton).
+validation mode, such as [hdfwallet (CLI)](https://github.com/hdfchain/hdfwallet)
+and [Decrediton (GUI)](https://github.com/hdfchain/decrediton).
 
-## Minimum Recommended Specifications (dcrd only)
+## Minimum Recommended Specifications (hdfd only)
 
 * 10 GB disk space (as of September 2018, increases over time)
 * 1GB memory (RAM)
@@ -87,7 +87,7 @@ and [Decrediton (GUI)](https://github.com/decred/decrediton).
 ## Getting Started
 
 So, you've decided to help the network by running a full node.  Great!  Running
-dcrd is simple.  All you need to do is install dcrd on a machine that is
+hdfd is simple.  All you need to do is install hdfd on a machine that is
 connected to the internet and meets the minimum recommended specifications, and
 launch it.
 
@@ -124,65 +124,65 @@ the repo's root directory.  Some notes:
 * Set the `GO111MODULE=on` environment variable if building from within
   `GOPATH`.
 
-* The `dcrd` executable will be installed to `$GOPATH/bin`.  `GOPATH`
+* The `hdfd` executable will be installed to `$GOPATH/bin`.  `GOPATH`
   defaults to `$HOME/go` (or `%USERPROFILE%\go` on Windows) if unset.
 
 
 ### Example of obtaining and building from source on Windows 10:
 
 ```PowerShell
-PS> git clone https://github.com/decred/dcrd $env:USERPROFILE\src\dcrd
-PS> cd $env:USERPROFILE\src\dcrd
+PS> git clone https://github.com/hdfchain/hdfd $env:USERPROFILE\src\hdfd
+PS> cd $env:USERPROFILE\src\hdfd
 PS> go install . .\cmd\...
-PS> & "$(go env GOPATH)\bin\dcrd" -V
+PS> & "$(go env GOPATH)\bin\hdfd" -V
 
 ```
 
 ## Docker
 
-### Running dcrd
+### Running hdfd
 
 You can run a decred node from inside a docker container.  To build the image
 yourself, use the following command:
 
 ```
-docker build -t decred/dcrd .
+docker build -t decred/hdfd .
 ```
 
 Or you can create an alpine based image (requires Docker 17.05 or higher):
 
 ```
-docker build -t decred/dcrd:alpine -f Dockerfile.alpine .
+docker build -t decred/hdfd:alpine -f Dockerfile.alpine .
 ```
 
 You can then run the image using:
 
 ```
-docker run decred/dcrd
+docker run decred/hdfd
 ```
 
 You may wish to use an external volume to customise your config and persist the
 data in an external volume:
 
 ```
-docker run --rm -v /home/user/dcrdata:/root/.dcrd/data decred/dcrd
+docker run --rm -v /home/user/dcrdata:/root/.hdfd/data decred/hdfd
 ```
 
-For a minimal image, you can use the decred/dcrd:alpine tag.  This is typically
+For a minimal image, you can use the decred/hdfd:alpine tag.  This is typically
 a more secure option while also being a much smaller image.
 
-You can run dcrctl from inside the image.  For example, run an image (mounting
+You can run hdfctl from inside the image.  For example, run an image (mounting
 your data from externally) with:
 
 ```
-docker run --rm -ti --name=dcrd-1 -v /home/user/.dcrd:/root/.dcrd \
-  decred/dcrd:alpine
+docker run --rm -ti --name=hdfd-1 -v /home/user/.hdfd:/root/.hdfd \
+  decred/hdfd:alpine
 ```
 
-And then run dcrctl commands against it.  For example:
+And then run hdfctl commands against it.  For example:
 
 ```
-docker exec -ti dcrd-1 dcrctl getbestblock
+docker exec -ti hdfd-1 hdfctl getbestblock
 ```
 
 ### Running Tests
@@ -218,14 +218,14 @@ https://decred.org/community
 
 ## Issue Tracker
 
-The [integrated github issue tracker](https://github.com/decred/dcrd/issues)
+The [integrated github issue tracker](https://github.com/hdfchain/hdfd/issues)
 is used for this project.
 
 ## Documentation
 
-The documentation for dcrd is a work-in-progress.  It is located in the
-[docs](https://github.com/decred/dcrd/tree/master/docs) folder.
+The documentation for hdfd is a work-in-progress.  It is located in the
+[docs](https://github.com/hdfchain/hdfd/tree/master/docs) folder.
 
 ## License
 
-dcrd is licensed under the [copyfree](http://copyfree.org) ISC License.
+hdfd is licensed under the [copyfree](http://copyfree.org) ISC License.

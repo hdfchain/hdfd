@@ -8,10 +8,10 @@ package dcrutil
 import (
 	"testing"
 
-	"github.com/decred/dcrd/chaincfg/v2/chainec"
-	"github.com/decred/dcrd/dcrec"
-	"github.com/decred/dcrd/dcrec/edwards"
-	"github.com/decred/dcrd/dcrec/secp256k1"
+	"github.com/hdfchain/hdfd/chaincfg/v2/chainec"
+	"github.com/hdfchain/hdfd/dcrec"
+	"github.com/hdfchain/hdfd/dcrec/edwards"
+	"github.com/hdfchain/hdfd/dcrec/secp256k1"
 )
 
 func TestEncodeDecodeWIF(t *testing.T) {

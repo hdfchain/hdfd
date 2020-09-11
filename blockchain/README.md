@@ -1,9 +1,9 @@
 blockchain
 ==========
 
-[![Build Status](https://img.shields.io/travis/decred/dcrd.svg)](https://travis-ci.org/decred/dcrd)
+[![Build Status](https://img.shields.io/travis/decred/hdfd.svg)](https://travis-ci.org/decred/hdfd)
 [![ISC License](https://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
-[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](https://godoc.org/github.com/decred/dcrd/blockchain)
+[![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](https://godoc.org/github.com/hdfchain/hdfd/blockchain)
 
 Package blockchain implements Decred block handling and chain selection rules.
 The test coverage is currently only around 60%, but will be increasing over
@@ -21,7 +21,7 @@ block chain.
 ## Installation and Updating
 
 ```bash
-$ go get -u github.com/decred/dcrd/blockchain
+$ go get -u github.com/hdfchain/hdfd/blockchain
 ```
 
 ## Decred Chain Processing Overview
@@ -61,18 +61,18 @@ is by no means exhaustive:
 
 ## Examples
 
-* [ProcessBlock Example](https://godoc.org/github.com/decred/dcrd/blockchain#example-BlockChain-ProcessBlock)
+* [ProcessBlock Example](https://godoc.org/github.com/hdfchain/hdfd/blockchain#example-BlockChain-ProcessBlock)
   Demonstrates how to create a new chain instance and use ProcessBlock to
   attempt to add a block to the chain.  This example intentionally
   attempts to insert a duplicate genesis block to illustrate how an invalid
   block is handled.
 
-* [CompactToBig Example](https://godoc.org/github.com/decred/dcrd/blockchain#example-CompactToBig)
+* [CompactToBig Example](https://godoc.org/github.com/hdfchain/hdfd/blockchain#example-CompactToBig)
   Demonstrates how to convert the compact "bits" in a block header which
   represent the target difficulty to a big integer and display it using the
   typical hex notation.
 
-* [BigToCompact Example](https://godoc.org/github.com/decred/dcrd/blockchain#example-BigToCompact)
+* [BigToCompact Example](https://godoc.org/github.com/hdfchain/hdfd/blockchain#example-BigToCompact)
   Demonstrates how to convert how to convert a target difficulty into the
   compact "bits" in a block header which represent that target difficulty.
 

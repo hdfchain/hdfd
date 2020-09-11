@@ -18,7 +18,7 @@ import (
 	"log"
 	"os"
 
-	"github.com/decred/dcrd/dcrec/secp256k1/v2"
+	"github.com/hdfchain/hdfd/dcrec/secp256k1/v2"
 )
 
 func main() {

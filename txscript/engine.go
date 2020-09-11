@@ -10,8 +10,8 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/decred/dcrd/dcrec/secp256k1"
-	"github.com/decred/dcrd/wire"
+	"github.com/hdfchain/hdfd/dcrec/secp256k1"
+	"github.com/hdfchain/hdfd/wire"
 )
 
 // ScriptFlags is a bitmask defining additional operations or tests that will be

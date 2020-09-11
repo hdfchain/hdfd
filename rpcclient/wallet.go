@@ -9,12 +9,12 @@ import (
 	"encoding/hex"
 	"encoding/json"
 
-	"github.com/decred/dcrd/chaincfg/chainhash"
-	"github.com/decred/dcrd/dcrjson/v2"
-	"github.com/decred/dcrd/dcrutil"
-	"github.com/decred/dcrd/hdkeychain/v2"
-	"github.com/decred/dcrd/wire"
-	walletjson "github.com/decred/dcrwallet/rpc/jsonrpc/types"
+	"github.com/hdfchain/hdfd/chaincfg/chainhash"
+	"github.com/hdfchain/hdfd/dcrjson/v2"
+	"github.com/hdfchain/hdfd/dcrutil"
+	"github.com/hdfchain/hdfd/hdkeychain/v2"
+	"github.com/hdfchain/hdfd/wire"
+	walletjson "github.com/hdfchain/hdfwallet/rpc/jsonrpc/types"
 )
 
 // *****************************
@@ -2413,7 +2413,7 @@ func (c *Client) GenerateVote(blockHash *chainhash.Hash, height int64, sstxHash 
 	return c.GenerateVoteAsync(blockHash, height, sstxHash, voteBits, voteBitsExt).Receive()
 }
 
-// NOTE: While getinfo is implemented here (in wallet.go), a dcrd chain server
+// NOTE: While getinfo is implemented here (in wallet.go), a hdfd chain server
 // will respond to getinfo requests as well, excluding any wallet information.
 
 // FutureGetInfoResult is a future promise to deliver the result of a
@@ -2821,12 +2821,12 @@ func (c *Client) WalletInfo() (*walletjson.WalletInfoResult, error) {
 }
 
 // TODO(davec): Implement
-// backupwallet (NYI in dcrwallet)
-// encryptwallet (Won't be supported by dcrwallet since it's always encrypted)
-// getwalletinfo (NYI in dcrwallet or dcrjson)
-// listaddressgroupings (NYI in dcrwallet)
-// listreceivedbyaccount (NYI in dcrwallet)
+// backupwallet (NYI in hdfwallet)
+// encryptwallet (Won't be supported by hdfwallet since it's always encrypted)
+// getwalletinfo (NYI in hdfwallet or dcrjson)
+// listaddressgroupings (NYI in hdfwallet)
+// listreceivedbyaccount (NYI in hdfwallet)
 
 // DUMP
-// importwallet (NYI in dcrwallet)
-// dumpwallet (NYI in dcrwallet)
+// importwallet (NYI in hdfwallet)
+// dumpwallet (NYI in hdfwallet)
