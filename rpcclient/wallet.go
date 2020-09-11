@@ -13,7 +13,7 @@ import (
 	"github.com/hdfchain/hdfd/dcrjson/v3"
 	"github.com/hdfchain/hdfd/dcrutil/v2"
 	"github.com/hdfchain/hdfd/hdkeychain/v2"
-	chainjsonv1 "github.com/hdfchain/hdfd/rpc/jsonrpc/types"
+	chainjsonv1 "github.com/decred/dcrd/rpc/jsonrpc/types"
 	chainjson "github.com/hdfchain/hdfd/rpc/jsonrpc/types/v2"
 	"github.com/hdfchain/hdfd/wire"
 	walletjson "github.com/hdfchain/hdfwallet/rpc/jsonrpc/types"

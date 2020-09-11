@@ -36,6 +36,7 @@ replace (
 
 require (
 	github.com/btcsuite/winsvc v1.0.0
+	github.com/decred/dcrd/rpc/jsonrpc/types v1.0.1 // indirect
 	github.com/gorilla/websocket v1.4.2
 	github.com/hdfchain/base58 v1.0.5
 	github.com/hdfchain/go-socks v1.1.1
@@ -61,7 +62,6 @@ require (
 	github.com/hdfchain/hdfd/mining/v2 v2.0.0-00010101000000-000000000000
 	github.com/hdfchain/hdfd/peer/v2 v2.0.0-00010101000000-000000000000
 	github.com/hdfchain/hdfd/rpc/jsonrpc/types/v2 v2.0.0-20200910063743-aa6bbf11f012
-	github.com/hdfchain/hdfd/rpc/jsonrpc/types v1.0.3
 	github.com/hdfchain/hdfd/rpcclient/v5 v5.0.0-00010101000000-000000000000
 	github.com/hdfchain/hdfd/txscript/v2 v2.0.0-00010101000000-000000000000
 	github.com/hdfchain/hdfd/wire v1.3.0
