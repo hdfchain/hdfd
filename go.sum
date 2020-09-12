@@ -15,14 +15,6 @@ github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/dchest/siphash v1.2.1 h1:4cLinnzVJDKxTCl9B01807Yiy+W7ZzVHj/KIroQRvT4=
 github.com/dchest/siphash v1.2.1/go.mod h1:q+IRvb2gOSrUnYoPqHiyHXS0FOBBOdl6tONBlVnOnt4=
-github.com/decred/dcrd/chaincfg/chainhash v1.0.2 h1:rt5Vlq/jM3ZawwiacWjPa+smINyLRN07EO0cNBV6DGU=
-github.com/decred/dcrd/chaincfg/chainhash v1.0.2/go.mod h1:BpbrGgrPTr3YJYRN3Bm+D9NuaFd+zGyNeIKgrhCXK60=
-github.com/decred/dcrd/crypto/blake256 v1.0.0 h1:/8DMNYp9SGi5f0w7uCm6d6M4OU2rGFK09Y2A4Xv7EE0=
-github.com/decred/dcrd/crypto/blake256 v1.0.0/go.mod h1:sQl2p6Y26YV+ZOcSTP6thNdn47hh8kt6rqSlvmrXFAc=
-github.com/decred/dcrd/dcrjson/v3 v3.0.1 h1:b9cpplNJG+nutE2jS8K/BtSGIJihEQHhFjFAsvJF/iI=
-github.com/decred/dcrd/dcrjson/v3 v3.0.1/go.mod h1:fnTHev/ABGp8IxFudDhjGi9ghLiXRff1qZz/wvq12Mg=
-github.com/decred/dcrd/rpc/jsonrpc/types v1.0.1 h1:sWsGtWzdmrna6aysDCHwjANTJh+Lxt2xp6S10ahP79Y=
-github.com/decred/dcrd/rpc/jsonrpc/types v1.0.1/go.mod h1:dJUp9PoyFYklzmlImpVkVLOr6j4zKuUv66YgemP2sd8=
 github.com/envoyproxy/go-control-plane v0.9.0/go.mod h1:YTl/9mNaCwkRvm6d1a2C3ymFceY/DCBVvsKhRF0iEA4=
 github.com/envoyproxy/go-control-plane v0.9.4/go.mod h1:6rpuAdCZL397s3pYoYcLgu1mIlRU8Am5FuJP05cCM98=
 github.com/envoyproxy/protoc-gen-validate v0.1.0/go.mod h1:iSmxcyjqTsJpI2R4NaDN7+kN2VEUnK/pcBlmesArF7c=
@@ -58,6 +50,8 @@ github.com/hdfchain/hdfd/connmgr/v3 v3.0.0-20200910063743-aa6bbf11f012/go.mod h1
 github.com/hdfchain/hdfd/dcrec/secp256k1/v3 v3.0.0-20200910063743-aa6bbf11f012/go.mod h1:D+QR741WoWyMBXupA9Tq/ccIBBy4tyeUvHATJZwP88E=
 github.com/hdfchain/hdfd/dcrutil/v3 v3.0.0-20200910063743-aa6bbf11f012/go.mod h1:74+BAOpuysCbej6ctFZ1vFcKZjNCvg5Q0SPtMgSS2aY=
 github.com/hdfchain/hdfd/hdkeychain/v3 v3.0.0-20200910063743-aa6bbf11f012/go.mod h1:ayWqGIib4OCXmDkHO3j1u+rpNkDM5dtuKCbX2FxpFxA=
+github.com/hdfchain/hdfd/rpc/jsonrpc/types v1.0.4 h1:52cSSNItZMnTskSpPVV/mHEABLf5L0FfU3X360ikFRo=
+github.com/hdfchain/hdfd/rpc/jsonrpc/types v1.0.4/go.mod h1:NmusizAZyqNEKUcAHe5LRbEbyz+tbnhLR2b3KEmHsto=
 github.com/hdfchain/hdfd/txscript/v3 v3.0.0-20200910063743-aa6bbf11f012/go.mod h1:xxF9u5nfPAUZow1ADk+02dElGI9ejv3AMzp7UXsB/3k=
 github.com/hdfchain/hdfwallet v0.0.0-20200910081459-e1799de0430f h1:SsNLd7N7Ab0gkbjhSu5+mFbcQ8hluCkJyUPfyzIuG0E=
 github.com/hdfchain/hdfwallet v0.0.0-20200910081459-e1799de0430f/go.mod h1:Gm42ZKSN4+e/oLHEk1ruuJ0yGiokuxuLPAC68ZCXVns=
