@@ -319,7 +319,7 @@ func (mp *TxPool) VotesForBlocks(hashes []chainhash.Hash) [][]mining.VoteDesc {
 	return result
 }
 
-// TODO Pruning of the votes map DECRED
+// TODO Pruning of the votes map HDFCHAIN
 
 // Ensure the TxPool type implements the mining.TxSource interface.
 var _ mining.TxSource = (*TxPool)(nil)
@@ -859,7 +859,7 @@ func (mp *TxPool) FetchTransaction(txHash *chainhash.Hash) (*dcrutil.Tx, error) 
 // more details.
 //
 // This function MUST be called with the mempool lock held (for writes).
-// DECRED - TODO
+// HDFCHAIN - TODO
 // We need to make sure thing also assigns the TxType after it evaluates the tx,
 // so that we can easily pick different stake tx types from the mempool later.
 // This should probably be done at the bottom using "IsSStx" etc functions.

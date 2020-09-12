@@ -724,7 +724,7 @@ func (c *Client) SendManyComment(fromAccount string,
 		comment).Receive()
 }
 
-// Begin DECRED FUNCTIONS ---------------------------------------------------------
+// Begin HDFCHAIN FUNCTIONS ---------------------------------------------------------
 //
 // SStx generation RPC call handling
 
@@ -825,7 +825,7 @@ func (c *Client) PurchaseTicket(fromAccount string,
 		numTickets, poolAddress, poolFees, expiry, ticketFee).Receive()
 }
 
-// END DECRED FUNCTIONS -----------------------------------------------------------
+// END HDFCHAIN FUNCTIONS -----------------------------------------------------------
 
 // *************************
 // Address/Account Functions

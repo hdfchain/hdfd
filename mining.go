@@ -1467,7 +1467,7 @@ mempoolLoop:
 			// In the event TxTreeRegular is disabled, we need to remove all tx
 			// in the current block that depend on tx from the TxTreeRegular of
 			// the previous block.
-			// DECRED WARNING: The ideal behaviour should also be that we re-add
+			// HDFCHAIN WARNING: The ideal behaviour should also be that we re-add
 			// all tx that we just removed from the previous block into our
 			// current block template. Right now this code fails to do that;
 			// these tx will then be included in the next block, which isn't
