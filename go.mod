@@ -49,7 +49,7 @@ require (
 	github.com/hdfchain/hdfd/connmgr/v2 v2.0.0-00010101000000-000000000000
 	github.com/hdfchain/hdfd/crypto/ripemd160 v1.0.0
 	github.com/hdfchain/hdfd/database/v2 v2.0.0-20200910063743-aa6bbf11f012
-	github.com/hdfchain/hdfd/dcrec v1.0.0
+	github.com/hdfchain/hdfd/dcrec v1.0.1
 	github.com/hdfchain/hdfd/dcrec/secp256k1/v2 v2.0.0
 	github.com/hdfchain/hdfd/dcrjson/v3 v3.0.1
 	github.com/hdfchain/hdfd/dcrutil/v2 v2.0.1
