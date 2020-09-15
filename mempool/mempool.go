@@ -33,7 +33,7 @@ const (
 
 	// maxRelayFeeMultiplier is the factor that we disallow fees / kB above the
 	// minimum tx fee.  At the current default minimum relay fee of 0.0001
-	// DCR/kB, this results in a maximum allowed high fee of 1 DCR/kB.
+	// HDF/kB, this results in a maximum allowed high fee of 1 HDF/kB.
 	maxRelayFeeMultiplier = 1e4
 
 	// maxVoteDoubleSpends is the maximum number of vote double spends allowed
@@ -167,7 +167,7 @@ type Policy struct {
 	// of the max signature operations for a block.
 	MaxSigOpsPerTx int
 
-	// MinRelayTxFee defines the minimum transaction fee in DCR/kB to be
+	// MinRelayTxFee defines the minimum transaction fee in HDF/kB to be
 	// considered a non-zero fee.
 	MinRelayTxFee dcrutil.Amount
 

@@ -120,40 +120,40 @@ func TestAmountUnitConversions(t *testing.T) {
 		s         string
 	}{
 		{
-			name:      "MDCR",
+			name:      "MHDF",
 			amount:    MaxAmount,
 			unit:      AmountMegaCoin,
 			converted: 21,
-			s:         "21 MDCR",
+			s:         "21 MHDF",
 		},
 		{
-			name:      "kDCR",
+			name:      "kHDF",
 			amount:    44433322211100,
 			unit:      AmountKiloCoin,
 			converted: 444.33322211100,
-			s:         "444.333222111 kDCR",
+			s:         "444.333222111 kHDF",
 		},
 		{
 			name:      "Coin",
 			amount:    44433322211100,
 			unit:      AmountCoin,
 			converted: 444333.22211100,
-			s:         "444333.222111 DCR",
+			s:         "444333.222111 HDF",
 		},
 		{
-			name:      "mDCR",
+			name:      "mHDF",
 			amount:    44433322211100,
 			unit:      AmountMilliCoin,
 			converted: 444333222.11100,
-			s:         "444333222.111 mDCR",
+			s:         "444333222.111 mHDF",
 		},
 		{
 
-			name:      "μDCR",
+			name:      "μHDF",
 			amount:    44433322211100,
 			unit:      AmountMicroCoin,
 			converted: 444333222111.00,
-			s:         "444333222111 μDCR",
+			s:         "444333222111 μHDF",
 		},
 		{
 
@@ -169,7 +169,7 @@ func TestAmountUnitConversions(t *testing.T) {
 			amount:    44433322211100,
 			unit:      AmountUnit(-1),
 			converted: 4443332.2211100,
-			s:         "4443332.22111 1e-1 DCR",
+			s:         "4443332.22111 1e-1 HDF",
 		},
 	}
 
@@ -210,52 +210,52 @@ func TestAmountMulF64(t *testing.T) {
 		res  Amount
 	}{
 		{
-			name: "Multiply 0.1 DCR by 2",
-			amt:  100e5, // 0.1 DCR
+			name: "Multiply 0.1 HDF by 2",
+			amt:  100e5, // 0.1 HDF
 			mul:  2,
-			res:  200e5, // 0.2 DCR
+			res:  200e5, // 0.2 HDF
 		},
 		{
-			name: "Multiply 0.2 DCR by 0.02",
-			amt:  200e5, // 0.2 DCR
+			name: "Multiply 0.2 HDF by 0.02",
+			amt:  200e5, // 0.2 HDF
 			mul:  1.02,
-			res:  204e5, // 0.204 DCR
+			res:  204e5, // 0.204 HDF
 		},
 		{
-			name: "Multiply 0.1 DCR by -2",
-			amt:  100e5, // 0.1 DCR
+			name: "Multiply 0.1 HDF by -2",
+			amt:  100e5, // 0.1 HDF
 			mul:  -2,
-			res:  -200e5, // -0.2 DCR
+			res:  -200e5, // -0.2 HDF
 		},
 		{
-			name: "Multiply 0.2 DCR by -0.02",
-			amt:  200e5, // 0.2 DCR
+			name: "Multiply 0.2 HDF by -0.02",
+			amt:  200e5, // 0.2 HDF
 			mul:  -1.02,
-			res:  -204e5, // -0.204 DCR
+			res:  -204e5, // -0.204 HDF
 		},
 		{
-			name: "Multiply -0.1 DCR by 2",
-			amt:  -100e5, // -0.1 DCR
+			name: "Multiply -0.1 HDF by 2",
+			amt:  -100e5, // -0.1 HDF
 			mul:  2,
-			res:  -200e5, // -0.2 DCR
+			res:  -200e5, // -0.2 HDF
 		},
 		{
-			name: "Multiply -0.2 DCR by 0.02",
-			amt:  -200e5, // -0.2 DCR
+			name: "Multiply -0.2 HDF by 0.02",
+			amt:  -200e5, // -0.2 HDF
 			mul:  1.02,
-			res:  -204e5, // -0.204 DCR
+			res:  -204e5, // -0.204 HDF
 		},
 		{
-			name: "Multiply -0.1 DCR by -2",
-			amt:  -100e5, // -0.1 DCR
+			name: "Multiply -0.1 HDF by -2",
+			amt:  -100e5, // -0.1 HDF
 			mul:  -2,
-			res:  200e5, // 0.2 DCR
+			res:  200e5, // 0.2 HDF
 		},
 		{
-			name: "Multiply -0.2 DCR by -0.02",
-			amt:  -200e5, // -0.2 DCR
+			name: "Multiply -0.2 HDF by -0.02",
+			amt:  -200e5, // -0.2 HDF
 			mul:  -1.02,
-			res:  204e5, // 0.204 DCR
+			res:  204e5, // 0.204 HDF
 		},
 		{
 			name: "Round down",
@@ -271,9 +271,9 @@ func TestAmountMulF64(t *testing.T) {
 		},
 		{
 			name: "Multiply by 0.",
-			amt:  1e8, // 1 DCR
+			amt:  1e8, // 1 HDF
 			mul:  0,
-			res:  0, // 0 DCR
+			res:  0, // 0 HDF
 		},
 		{
 			name: "Multiply 1 by 0.5.",

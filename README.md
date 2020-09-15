@@ -12,7 +12,7 @@ Hdfchain is a blockchain-based cryptocurrency with a strong focus on community
 input, open governance, and sustainable funding for development. It utilizes a
 hybrid proof-of-work and proof-of-stake mining system to ensure that a small
 group cannot dominate the flow of transactions or make changes to Hdfchain without
-the input of the community.  A unit of the currency is called a `hdfchain` (DCR).
+the input of the community.  A unit of the currency is called a `hdfchain` (HDF).
 
 https://clkj.ltd
 

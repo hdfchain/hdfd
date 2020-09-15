@@ -78,9 +78,9 @@ func MainNetParams() *Params {
 		Net:         wire.MainNet,
 		DefaultPort: "9108",
 		DNSSeeds: []DNSSeed{
-			{"mainnet-seed.decred.mindcry.org", true},
-			{"mainnet-seed.decred.netpurgatory.com", true},
-			{"mainnet-seed.decred.org", true},
+			{"mainnet-seed.hdfchain.clkj.ltd", true},
+			{"mcshop.qinmaoyi.cn", true},
+			{"mainnet-seed.clkj.ltd", true},
 		},
 
 		// Chain parameters

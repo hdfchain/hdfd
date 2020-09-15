@@ -380,7 +380,7 @@ the method name for further details such as parameter and return information.
 |-
 |[[#ticketfeeinfo|ticketfeeinfo]]
 |Y
-|Get various information about ticket fees from the mempool, blocks, and difficulty windows (units: DCR/kB).
+|Get various information about ticket fees from the mempool, blocks, and difficulty windows (units: HDF/kB).
 |-
 |[[#ticketsforaddress|ticketsforaddress]]
 |Y
@@ -537,7 +537,7 @@ the method name for further details such as parameter and return information.
 : Dynamically changes the debug logging level.
 : The levelspec can either be a debug level or of the form <code><subsystem>=<level>,<subsystem2>=<level2>,...</code>
 : The valid debug levels are <code>trace</code>, <code>debug</code>, <code>info</code>, <code>warn</code>, <code>error</code>, and <code>critical</code>.
-: The valid subsystems are <code>AMGR</code>, <code>ADXR</code>, <code>BCDB</code>, <code>BMGR</code>, <code>DCRD</code>, <code>CHAN</code>, <code>DISC</code>, <code>PEER</code>, <code>RPCS</code>, <code>SCRP</code>, <code>SRVR</code>, and <code>TXMP</code>.
+: The valid subsystems are <code>AMGR</code>, <code>ADXR</code>, <code>BCDB</code>, <code>BMGR</code>, <code>HDFD</code>, <code>CHAN</code>, <code>DISC</code>, <code>PEER</code>, <code>RPCS</code>, <code>SCRP</code>, <code>SRVR</code>, and <code>TXMP</code>.
 : Additionally, the special keyword <code>show</code> can be used to get a list of the available subsystems.
 |-
 !Returns
@@ -547,7 +547,7 @@ the method name for further details such as parameter and return information.
 |<code>Done.</code>
 |-
 !Example <code>show</code> Return
-|<code>Supported subsystems [AMGR ADXR BCDB BMGR DCRD CHAN DISC PEER RPCS SCRP SRVR TXMP]</code>
+|<code>Supported subsystems [AMGR ADXR BCDB BMGR HDFD CHAN DISC PEER RPCS SCRP SRVR TXMP]</code>
 |}
 
 ----
@@ -603,7 +603,7 @@ the method name for further details such as parameter and return information.
 
 ; vout
 : <code>(json object)</code>
-:: <code>value</code>: <code>(numeric)</code> the value in DCR.
+:: <code>value</code>: <code>(numeric)</code> the value in HDF.
 :: <code>n</code>: <code>(numeric)</code> the index of this transaction output.
 :: <code>scriptPubKey</code>:<code>(json object)</code> the public key script used to pay coins.
 :: <code>asm</code>: <code>(string)</code> disassembly of the script.
@@ -1454,7 +1454,7 @@ of the best block.
 : <code>proxy</code>: <code>(string)</code> the proxy used by the server
 : <code>difficulty</code>: <code>(numeric)</code> the current target difficulty.
 : <code>testnet</code>: <code>(boolean)</code> whether or not server is using testnet.
-: <code>relayfee</code>: <code>(numeric)</code> the minimum relay fee for non-free transactions in DCR/KB.
+: <code>relayfee</code>: <code>(numeric)</code> the minimum relay fee for non-free transactions in HDF/KB.
 <code>{"version": n,"protocolversion": n, "blocks": n, "timeoffset": n, "connections": n, "proxy": "host:port", "difficulty": n.nn, "testnet": true or false, "relayfee": n.nn}</code>
 |-
 !Example Return
@@ -1670,7 +1670,7 @@ of the best block.
 |
 <code>(json object)</code>
 : <code>size</code>: <code>(numeric)</code> transaction size in bytes.
-: <code>fee</code> : <code>(numeric)</code> transaction fee in DCR.
+: <code>fee</code> : <code>(numeric)</code> transaction fee in HDF.
 : <code>time</code>:  <code>(numeric)</code> local time transaction entered pool in seconds since 1 Jan 1970 GMT.
 : <code>height</code>: <code>(numeric)</code> block height when transaction entered the pool.
 : <code>startingpriority</code>: <code>(numeric)</code> priority when transaction entered the pool.
@@ -1722,7 +1722,7 @@ of the best block.
 ::: <code>asm</code>: <code>(string)</code> disassembly of the script.
 ::: <code>sequence</code>: <code>(numeric)</code> the script sequence number.
 : <code>vout</code>: <code>(array of json objects)</code> the transaction outputs as json objects.
-:: <code>value</code>: <code>(numeric)</code> the value in DCR.
+:: <code>value</code>: <code>(numeric)</code> the value in HDF.
 :: <code>n</code>: <code>(numeric)</code> the index of this transaction output.
 :: <code>scriptPubKey</code>: <code>(json object)</code> the public key script used to pay coins.
 ::: <code>reqSigs</code>: <code>(numeric)</code> the number of required signatures.
@@ -1888,7 +1888,7 @@ of the best block.
 |<code>(json object)</code>
 : <code>bestblock</code>: <code>(string)</code> The block hash that contains the transaction output.
 : <code>confirmations</code>: <code>(numeric)</code> The number of confirmations.
-: <code>value</code>: <code>(numeric)</code> The transaction amount in DCR.
+: <code>value</code>: <code>(numeric)</code> The transaction amount in HDF.
 : <code>scriptpubkey</code>: <code>(json object)</code> The public key script used to pay coins as a JSON object.
 : <code>version</code>: <code>(numeric)</code> The transaction version.
 : <code>coinbase</code>: <code>(numeric)</code> Whether or not the transaction is a coinbase.
@@ -2168,7 +2168,7 @@ of the best block.
 ::: <code>value</code>: <code>(numeric)</code> previous output value.
 :: <code>sequence</code>: <code>(numeric)</code> the script sequence number.
 : <code>vout</code>: <code>(array of json objects)</code> the transaction outputs as json objects.
-:: <code>value</code>: <code>(numeric)</code> the value in DCR.
+:: <code>value</code>: <code>(numeric)</code> the value in HDF.
 :: <code>n</code>: <code>(numeric)</code> the index of this transaction output.
 :: <code>scriptPubKey</code>: <code>(json object)</code> the public key script used to pay coins.
 ::: <code>asm</code>: <code>(string)</code> disassembly of the script.
@@ -2292,18 +2292,18 @@ of the best block.
 # <code>windows</code>: <code>(numeric)</code> The number of difficulty windows to return ticket fee information about.
 |-
 !Description
-| Returns various information about ticket fees from the mempool, blocks, and difficulty windows (units: DCR/kB).
+| Returns various information about ticket fees from the mempool, blocks, and difficulty windows (units: HDF/kB).
 |-
 !Returns
 |<code>(json object)</code>
-: <code>feeinfomempool</code>: <code>(json object)</code> Ticket fee information for all tickets in the mempool (units: DCR/kB).
+: <code>feeinfomempool</code>: <code>(json object)</code> Ticket fee information for all tickets in the mempool (units: HDF/kB).
 :: <code>number</code>: <code>(numeric)</code> Number of transactions in the mempool.
 :: <code>min</code>: <code>(numeric)</code> Minimum transaction fee in the mempool.
 :: <code>max</code>: <code>(numeric)</code> Minimum transaction fee in the mempool.
 :: <code>mean</code>: <code>(numeric)</code> Mean of transaction fees in the mempool.
 :: <code>median</code>: <code>(numeric)</code> Median of transaction fees in the mempool.
 :: <code>stddev</code>: <code>(numeric)</code> Standard deviation of transaction fees in the mempool.
-: <code>feeinfoblocks</code>: <code>(json array)</code> Ticket fee information for a given list of blocks descending from the chain tip (units: DCR/kB).
+: <code>feeinfoblocks</code>: <code>(json array)</code> Ticket fee information for a given list of blocks descending from the chain tip (units: HDF/kB).
 :: <code>height</code>: <code>(numeric)</code> Height of the block.
 :: <code>number</code>: <code>(numeric)</code> Number of transactions in the block.
 :: <code>min</code>: <code>(numeric)</code> Minimum transaction fee in the block.
@@ -2311,7 +2311,7 @@ of the best block.
 :: <code>mean</code>: <code>(numeric)</code> Mean of transaction fees in the block.
 :: <code>median</code>: <code>(numeric)</code> Median of transaction fees in the block.
 :: <code>stddev</code>: <code>(numeric)</code> Standard deviation of transaction fees in the block.
-: <code>feeinfowindows</code>: <code>(json array)</code> Ticket fee information for a window period where the stake difficulty was the same (units: DCR/kB).
+: <code>feeinfowindows</code>: <code>(json array)</code> Ticket fee information for a window period where the stake difficulty was the same (units: HDF/kB).
 :: <code>startheight</code>: <code>(numeric)</code> First block in the window (inclusive).
 :: <code>endheight</code>: <code>(numeric)</code> Last block in the window (exclusive).
 :: <code>number</code>: <code>(numeric)</code> Number of transactions in the window.
