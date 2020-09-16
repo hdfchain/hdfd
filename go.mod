@@ -5,7 +5,9 @@ go 1.13
 require (
 	github.com/btcsuite/winsvc v1.0.0
 	github.com/davecgh/go-spew v1.1.1
+	github.com/gorilla/websocket v1.4.2
 	github.com/hdfchain/base58 v1.0.5
+	github.com/hdfchain/go-socks v1.1.1
 	github.com/hdfchain/hdfd/addrmgr v1.1.0
 	github.com/hdfchain/hdfd/bech32 v1.0.0
 	github.com/hdfchain/hdfd/blockchain/stake/v3 v3.0.0-20200215031403-6b2ce76f0986
@@ -29,9 +31,7 @@ require (
 	github.com/hdfchain/hdfd/rpcclient/v6 v6.0.0-20200215031403-6b2ce76f0986
 	github.com/hdfchain/hdfd/txscript/v3 v3.0.0-20200215031403-6b2ce76f0986
 	github.com/hdfchain/hdfd/wire v1.3.0
-	github.com/hdfchain/go-socks v1.1.1
 	github.com/hdfchain/slog v1.0.0
-	github.com/gorilla/websocket v1.4.2
 	github.com/jessevdk/go-flags v1.4.0
 	github.com/jrick/bitset v1.0.0
 	github.com/jrick/logrotate v1.0.0
@@ -67,3 +67,5 @@ replace (
 	github.com/hdfchain/hdfd/txscript/v3 => ./txscript
 	github.com/hdfchain/hdfd/wire => ./wire
 )
+
+replace github.com/hdfchain/hdfd/dcrec/edwards/v2 v2.0.0 => ./dcrec/edwards
