@@ -12,7 +12,7 @@ require (
 	github.com/hdfchain/hdfd/dcrec v1.0.0
 	github.com/hdfchain/hdfd/dcrec/secp256k1/v2 v2.0.0
 	github.com/hdfchain/hdfd/dcrutil/v2 v2.0.0
-	github.com/hdfchain/hdfd/gcs/v2 v2.0.0-00010101000000-000000000000
+	github.com/hdfchain/hdfd/gcs/v2 v2.0.0
 	github.com/hdfchain/hdfd/txscript/v2 v2.0.0
 	github.com/hdfchain/hdfd/wire v1.2.0
 	github.com/hdfchain/slog v1.0.0
