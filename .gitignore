@@ -1,0 +1,6 @@
+hdfd
+cmd/hdfctl/hdfctl
+cmd/promptsecret/promptsecret
+*~
+*.pyc
+vendor/

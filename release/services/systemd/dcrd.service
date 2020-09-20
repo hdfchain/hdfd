@@ -1,0 +1,13 @@
+[Unit]
+Description=Hdfchain Full Node
+
+[Service]
+Type=simple
+User=hdfd
+Group=hdfd
+WorkingDirectory=/var/hdfd
+ExecStart=/opt/hdfchain/bin/hdfd --appdata=/var/hdfd
+Restart=on-abnormal
+
+[Install]
+WantedBy=multi-user.target
