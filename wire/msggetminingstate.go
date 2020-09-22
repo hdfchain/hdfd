@@ -1,5 +1,5 @@
 // Copyright (c) 2013-2015 The btcsuite developers
-// Copyright (c) 2015-2016 The Decred developers
+// Copyright (c) 2015-2016 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -14,13 +14,13 @@ import (
 // from a peer.
 type MsgGetMiningState struct{}
 
-// BtcDecode decodes r using the Decred protocol encoding into the receiver.
+// BtcDecode decodes r using the Hdfchain protocol encoding into the receiver.
 // This is part of the Message interface implementation.
 func (msg *MsgGetMiningState) BtcDecode(r io.Reader, pver uint32) error {
 	return nil
 }
 
-// BtcEncode encodes the receiver to w using the Decred protocol encoding.
+// BtcEncode encodes the receiver to w using the Hdfchain protocol encoding.
 // This is part of the Message interface implementation.
 func (msg *MsgGetMiningState) BtcEncode(w io.Writer, pver uint32) error {
 	return nil
@@ -38,7 +38,7 @@ func (msg *MsgGetMiningState) MaxPayloadLength(pver uint32) uint32 {
 	return 0
 }
 
-// NewMsgGetMiningState returns a new Decred pong message that conforms to the Message
+// NewMsgGetMiningState returns a new Hdfchain pong message that conforms to the Message
 // interface.  See MsgPong for details.
 func NewMsgGetMiningState() *MsgGetMiningState {
 	return &MsgGetMiningState{}

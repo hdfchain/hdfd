@@ -1,4 +1,4 @@
-// Copyright (c) 2017-2020 The Decred developers
+// Copyright (c) 2017-2020 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -397,7 +397,7 @@ const DcrctlSampleConfig = `[Application Options]
 ; proxyuser=
 ; proxypass=
 
-; Username and password to authenticate connections to a Decred RPC server
+; Username and password to authenticate connections to a Hdfchain RPC server
 ; (usually hdfd or hdfwallet)
 ; rpcuser=
 ; rpcpass=

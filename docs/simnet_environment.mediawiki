@@ -1,6 +1,6 @@
 ==1. Overview==
 
-When developing Decred applications or testing potential changes, it is often
+When developing Hdfchain applications or testing potential changes, it is often
 extremely useful to have a private test network where transactions are actually
 mined into blocks, difficulty levels are low enough to generate blocks on
 demand, it is possible to easily cause chain reorganizations for testing
@@ -11,7 +11,7 @@ network (<code>--simnet</code>), where the difficulty starts extremely low to
 enable fast CPU mining of blocks.  Simnet also has some modified functionality
 that helps developers avoid common issues early in development.
 
-Other components in the Decred ecosystem, such as <code>hdfwallet</code> and
+Other components in the Hdfchain ecosystem, such as <code>hdfwallet</code> and
 <code>hdfctl</code>, also support the simulation network to facilitate testing.
 
 As simnet is a temporary network for private use, there are no public block

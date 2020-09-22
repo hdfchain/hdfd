@@ -148,11 +148,11 @@ the method name for further details such as parameter and return information.
 |-
 |[[#estimatefee|estimatefee]]
 |Y
-|Returns the estimated fee in dcr/kb.
+|Returns the estimated fee in hdf/kb.
 |-
 |[[#estimatesmartfee|estimatesmartfee]]
 |Y
-|Returns the estimated fee using the historical fee data in dcr/kb.
+|Returns the estimated fee using the historical fee data in hdf/kb.
 |-
 |[[#estimatestakediff|estimatestakediff]]
 |Y
@@ -252,7 +252,7 @@ the method name for further details such as parameter and return information.
 |-
 |[[#getcurrentnet|getcurrentnet]]
 |Y
-|Get Decred network hdfd is running on.
+|Get Hdfchain network hdfd is running on.
 |-
 |[[#getdifficulty|getdifficulty]]
 |Y
@@ -622,7 +622,7 @@ the method name for further details such as parameter and return information.
 :: <code>hex</code>: <code>(string)</code> hex-encoded bytes of the script.
 :: <code>reqSigs</code>: <code>(numeric)</code> the number of required signatures.
 :: <code>type</code>: <code>(string)</code> the type of the script (e.g. 'pubkeyhash').
-:: <code>addresses</code>: <code>(json array of string)</code> the Decred addresses associated with this output.
+:: <code>addresses</code>: <code>(json array of string)</code> the Hdfchain addresses associated with this output.
 
 : <code>{ "value": n, "n": n, "scriptPubKey": {"asm": "asm", "hex": "data","reqSigs": n, "type": "scripttype","addresses": [...]}}</code>
 |-
@@ -657,7 +657,7 @@ the method name for further details such as parameter and return information.
 : <code>asm</code>: <code>(string)</code> disassembly of the script (absent for nonstandard scripts).
 : <code>reqSigs</code>: <code>(numeric)</code> the number of required signatures.
 : <code>type</code>: <code>(string)</code> the type of the script (e.g. 'pubkeyhash').
-: <code>addresses</code>: <code>(json array of string)</code> the Decred addresses associated with this script.
+: <code>addresses</code>: <code>(json array of string)</code> the Hdfchain addresses associated with this script.
 : <code>p2sh</code>: <code>(string)</code> the script hash for use in pay-to-script-hash transactions.
 <code>{ "asm": "asm", "reqSigs": n, "type": "scripttype", "addresses": [...], "p2sh": "scripthash"}</code>
 |-
@@ -677,7 +677,7 @@ the method name for further details such as parameter and return information.
 # <code>numblocks</code>: <code>(numeric, required)</code> unused.
 |-
 !Description
-|Returns the estimated fee in dcr/kb.
+|Returns the estimated fee in hdf/kb.
 |-
 !Returns
 |<code>numeric</code>
@@ -699,7 +699,7 @@ the method name for further details such as parameter and return information.
 # <code>mode</code>: <code>(string)</code> The only supported mode for the moment is 'conservative'.
 |-
 !Description
-|Returns the estimated fee using the historical fee data in dcr/kb.
+|Returns the estimated fee using the historical fee data in hdf/kb.
 |-
 !Returns
 |<code>numeric</code>
@@ -1377,7 +1377,7 @@ of the best block.
 |None
 |-
 !Description
-|Get Decred network hdfd is running on.
+|Get Hdfchain network hdfd is running on.
 |-
 !Returns
 |<code>numeric</code>
@@ -1768,8 +1768,8 @@ of the best block.
 :: <code>scriptPubKey</code>: <code>(json object)</code> the public key script used to pay coins.
 ::: <code>reqSigs</code>: <code>(numeric)</code> the number of required signatures.
 ::: <code>type</code>: <code>(string)</code> the type of the script (e.g. 'pubkeyhash').
-::: <code>addresses</code>: <code>(json array of string)</code> the Decred addresses associated with this output.
-:::: <code>hdfchainaddress</code>:  <code>(string)</code> the Decred address
+::: <code>addresses</code>: <code>(json array of string)</code> the Hdfchain addresses associated with this output.
+:::: <code>hdfchainaddress</code>:  <code>(string)</code> the Hdfchain address
 : <code>blockhash</code>:  <code>(string)</code> the hash of the block that contains the transaction.
 : <code>blockheight</code>:  <code>(numeric)</code> the height of the block that contains the transaction.
 : <code>blockindex</code>:  <code>(numeric)</code> the index within the array of transactions contained by the block.
@@ -2219,7 +2219,7 @@ of the best block.
 |-
 !Parameters
 |
-# <code>address</code>: <code>(string, required)</code> Decred address.
+# <code>address</code>: <code>(string, required)</code> Hdfchain address.
 # <code>verbose</code>: <code>(int, optional, default=true)</code> specifies the transaction is returned as a JSON object instead of hex-encoded string.
 # <code>skip</code>: <code>(int, optional, default=0)</code> the number of leading transactions to leave out of the final response.
 # <code>count</code>: <code>(int, optional, default=100)</code> the maximum number of transactions to return.
@@ -2265,8 +2265,8 @@ of the best block.
 ::: <code>hex</code>: <code>(string)</code> hex-encoded bytes of the script.
 ::: <code>reqSigs</code>: <code>(numeric)</code> the number of required signatures.
 ::: <code>type</code>: <code>(string)</code> the type of the script (e.g. 'pubkeyhash').
-::: <code>addresses</code>: <code>(json array of string)</code> the Decred addresses associated with this output.
-::: <code>address</code>:  <code>(string)</code> the Decred address.
+::: <code>addresses</code>: <code>(json array of string)</code> the Hdfchain addresses associated with this output.
+::: <code>address</code>:  <code>(string)</code> the Hdfchain address.
 : <code>blockhash</code>:  <code>(string)</code> the hash of the block that contains the transaction.
 : <code>blockheight</code>:  <code>(numeric)</code> the height of the block that contains the transaction.
 : <code>blockindex</code>:  <code>(numeric)</code> the index within the array of transactions contained by the block.
@@ -2494,7 +2494,7 @@ of the best block.
 |-
 !Parameters
 |
-# <code>address</code>: <code>(string, required)</code> Decred address.
+# <code>address</code>: <code>(string, required)</code> Hdfchain address.
 |-
 !Description
 |Verify an address is valid.
@@ -2502,7 +2502,7 @@ of the best block.
 !Returns
 |<code>(json object)</code>
 : <code>isvalid</code>: <code>(bool)</code> whether or not the address is valid.
-: <code>address</code>: <code>(string)</code> the Decred address validated.
+: <code>address</code>: <code>(string)</code> the Hdfchain address validated.
 
 <code>{"isvalid": true or false,"address": "hdfchainaddress"}</code>
 |}
@@ -2545,7 +2545,7 @@ of the best block.
 |-
 !Parameters
 |
-# <code>address</code>: <code>(string, required)</code> The Decred address to use for the signature.
+# <code>address</code>: <code>(string, required)</code> The Hdfchain address to use for the signature.
 # <code>signature</code>: <code>(string, required)</code> The base-64 encoded signature provided by the signer.
 # <code>message</code>: <code>(string, required)</code> The signed message.
 |-
@@ -2781,7 +2781,7 @@ NOTE: This is only required if an HTTP Authorization header is not being used.
 !Parameters
 |
 # <code>Addresses</code>: <code>(JSON array, required)</code>
-: <code>hdfchainaddress</code>: <code>(string)</code> the Decred address.
+: <code>hdfchainaddress</code>: <code>(string)</code> the Hdfchain address.
 
 <code>["hdfchainaddress", ...]</code>
 |-
@@ -2805,7 +2805,7 @@ NOTE: This is only required if an HTTP Authorization header is not being used.
 !Parameters
 |
 # <code>Addresses</code>: <code>(JSON array, required)</code>
-: <code>hdfchainaddress</code>: <code>(string)</code> the Decred address.
+: <code>hdfchainaddress</code>: <code>(string)</code> the Hdfchain address.
 
 <code>["hdfchainaddress", ...]</code>
 |-

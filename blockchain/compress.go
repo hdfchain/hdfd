@@ -1,5 +1,5 @@
 // Copyright (c) 2015-2016 The btcsuite developers
-// Copyright (c) 2015-2020 The Decred developers
+// Copyright (c) 2015-2020 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -175,7 +175,7 @@ const (
 	// than half the number required to overflow a single byte in VLQ format
 	// (127). All scripts prefixed 64 and higher for their size are considered
 	// uncompressed scripts that are stored uncompressed. Because only 5
-	// special script types are currently stored by Decred, there is a large
+	// special script types are currently stored by Hdfchain, there is a large
 	// amount of room for future upgrades to the compression algorithm with
 	// scripts that are common, such as those for the staking system.
 	numSpecialScripts = 64
@@ -694,7 +694,7 @@ func decodeCompressedTxOut(serialized []byte, compressionVersion uint32,
 }
 
 // -----------------------------------------------------------------------------
-// Decred specific transaction encoding flags
+// Hdfchain specific transaction encoding flags
 //
 // Details about a transaction needed to determine how it may be spent
 // according to consensus rules are given by these flags.

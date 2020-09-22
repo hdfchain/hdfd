@@ -29,13 +29,13 @@ are parameterized by the following:
 
 A comprehensive suite of tests is provided to ensure proper functionality.
 
-## GCS use in Decred
+## GCS use in Hdfchain
 
 GCS is used as a mechanism for storing, transmitting, and committing to
 per-block filters.  Consensus-validating full nodes commit to a single filter
 for every block and serve the filter to SPV clients that match against the
 filter locally to determine if the block is potentially relevant.  The required
-parameters for Decred are defined by the blockcf2 package.
+parameters for Hdfchain are defined by the blockcf2 package.
 
 For more details, see the [Block Filters section of
 DCP0005](https://github.com/hdfchain/dcps/blob/master/dcp-0005/dcp-0005.mediawiki#block-filters).

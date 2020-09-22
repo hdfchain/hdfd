@@ -1,4 +1,4 @@
-// Copyright (c) 2018-2019 The Decred developers
+// Copyright (c) 2018-2019 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -34,13 +34,13 @@ with contextual information.  A convenience function named IsErrorCode is also
 provided to allow callers to easily check for a specific error code.  See
 ErrorCode in the package documentation for a full list.
 
-GCS use in Decred
+GCS use in Hdfchain
 
 GCS is used as a mechanism for storing, transmitting, and committing to
 per-block filters.  Consensus-validating full nodes commit to a single filter
 for every block and serve the filter to SPV clients that match against the
 filter locally to determine if the block is potentially relevant.  The required
-parameters for Decred are defined by the blockcf2 package.
+parameters for Hdfchain are defined by the blockcf2 package.
 
 For more details, see the the Block Filters section of DCP0005:
 https://github.com/hdfchain/dcps/blob/master/dcp-0005/dcp-0005.mediawiki#block-filters

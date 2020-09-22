@@ -1,5 +1,5 @@
 [Unit]
-Description=Decred Full Node
+Description=Hdfchain Full Node
 
 [Service]
 Type=simple

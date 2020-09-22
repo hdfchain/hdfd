@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2016 The btcsuite developers
-// Copyright (c) 2015-2019 The Decred developers
+// Copyright (c) 2015-2019 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -18,14 +18,14 @@ import (
 // private use within a group of individuals doing simulation testing and full
 // integration tests between different applications such as wallets, voting
 // service providers, mining pools, block explorers, and other services that
-// build on Decred.
+// build on Hdfchain.
 //
 // The functionality is intended to differ in that the only nodes which are
 // specifically specified are used to create the network rather than following
 // normal discovery rules.  This is important as otherwise it would just turn
 // into another public testnet.
 func SimNetParams() *Params {
-	// simNetPowLimit is the highest proof of work value a Decred block can have
+	// simNetPowLimit is the highest proof of work value a Hdfchain block can have
 	// for the simulation test network.  It is the value 2^255 - 1.
 	simNetPowLimit := new(big.Int).Sub(new(big.Int).Lsh(bigOne, 255), bigOne)
 
@@ -158,7 +158,7 @@ func SimNetParams() *Params {
 		SLIP0044CoinType: 1,   // SLIP0044, Testnet (all coins)
 		LegacyCoinType:   115, // ASCII for s, for backwards compatibility
 
-		// Decred PoS parameters
+		// Hdfchain PoS parameters
 		MinimumStakeDiff:        20000,
 		TicketPoolSize:          64,
 		TicketsPerBlock:         5,
@@ -178,7 +178,7 @@ func SimNetParams() *Params {
 		StakeMajorityMultiplier: 3,
 		StakeMajorityDivisor:    4,
 
-		// Decred organization related parameters
+		// Hdfchain organization related parameters
 		//
 		// Treasury address is a 3-of-3 P2SH going to a wallet with seed:
 		// aardvark adroitness aardvark adroitness

@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The Decred developers
+// Copyright (c) 2019 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -113,7 +113,7 @@ func (p *mockSubsidyParams) VotesPerBlock() uint16 {
 }
 
 // mockMainNetParams returns mock mainnet subsidy parameters to use throughout
-// the tests.  They match the Decred mainnet params as of the time this comment
+// the tests.  They match the Hdfchain mainnet params as of the time this comment
 // was written.
 func mockMainNetParams() *mockSubsidyParams {
 	return &mockSubsidyParams{

@@ -1,5 +1,5 @@
 // Copyright (c) 2014 The btcsuite developers
-// Copyright (c) 2015-2019 The Decred developers
+// Copyright (c) 2015-2019 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -64,7 +64,7 @@ type GetAddedNodeInfoResult struct {
 
 // GetBlockVerboseResult models the data from the getblock command when the
 // verbose flag is set.  When the verbose flag is not set, getblock returns a
-// hex-encoded string.  Contains Decred additions.
+// hex-encoded string.  Contains Hdfchain additions.
 type GetBlockVerboseResult struct {
 	Hash          string        `json:"hash"`
 	Confirmations int64         `json:"confirmations"`
@@ -210,7 +210,7 @@ type GetMempoolInfoResult struct {
 }
 
 // GetMiningInfoResult models the data from the getmininginfo command.
-// Contains Decred additions.
+// Contains Hdfchain additions.
 type GetMiningInfoResult struct {
 	Blocks           int64   `json:"blocks"`
 	CurrentBlockSize uint64  `json:"currentblocksize"`

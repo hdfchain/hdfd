@@ -6,7 +6,7 @@ standalone
 [![Doc](https://img.shields.io/badge/doc-reference-blue.svg)](https://pkg.go.dev/github.com/hdfchain/hdfd/blockchain/standalone)
 
 Package standalone provides standalone functions useful for working with the
-Decred blockchain consensus rules.
+Hdfchain blockchain consensus rules.
 
 The primary goal of offering these functions via a separate module is to reduce
 the required dependencies to a minimum as compared to the blockchain module.

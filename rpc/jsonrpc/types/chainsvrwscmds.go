@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2015 The btcsuite developers
-// Copyright (c) 2015-2019 The Decred developers
+// Copyright (c) 2015-2019 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -26,7 +26,7 @@ func NewAuthenticateCmd(username, passphrase string) *AuthenticateCmd {
 }
 
 // OutPoint describes a transaction outpoint that will be marshalled to and
-// from JSON.  Contains Decred addition.
+// from JSON.  Contains Hdfchain addition.
 type OutPoint struct {
 	Hash  string `json:"hash"`
 	Tree  int8   `json:"tree"`

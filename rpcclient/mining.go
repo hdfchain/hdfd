@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2016 The btcsuite developers
-// Copyright (c) 2015-2019 The Decred developers
+// Copyright (c) 2015-2019 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -411,7 +411,7 @@ func (c *Client) SubmitBlockAsync(ctx context.Context, block *dcrutil.Block, opt
 	return (*FutureSubmitBlockResult)(c.sendCmd(ctx, cmd))
 }
 
-// SubmitBlock attempts to submit a new block into the Decred network.
+// SubmitBlock attempts to submit a new block into the Hdfchain network.
 func (c *Client) SubmitBlock(ctx context.Context, block *dcrutil.Block, options *chainjson.SubmitBlockOptions) error {
 	return c.SubmitBlockAsync(ctx, block, options).Receive()
 }

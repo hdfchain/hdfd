@@ -1,4 +1,4 @@
-// Copyright (c) 2015-2019 The Decred developers
+// Copyright (c) 2015-2019 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -80,7 +80,7 @@ const (
 //   Adding a block
 //
 // The steps for the addition of a block are as follows:
-// 1. Remove the n (constant, n=5 for all Decred networks) many tickets that were
+// 1. Remove the n (constant, n=5 for all Hdfchain networks) many tickets that were
 //     selected this block.  The results of this feed into two database updates:
 //         ------> A database entry containing all the data for the block
 //            |     required to undo the adding of the block (as serialized

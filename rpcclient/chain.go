@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2016 The btcsuite developers
-// Copyright (c) 2015-2019 The Decred developers
+// Copyright (c) 2015-2019 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -608,7 +608,7 @@ func (c *Client) GetRawMempoolVerbose(ctx context.Context, txType chainjson.GetR
 type FutureValidateAddressResult cmdRes
 
 // Receive waits for the response promised by the future and returns information
-// about the given Decred address.
+// about the given Hdfchain address.
 func (r *FutureValidateAddressResult) Receive() (*chainjson.ValidateAddressChainResult, error) {
 	res, err := receiveFuture(r.ctx, r.c)
 	if err != nil {
@@ -636,7 +636,7 @@ func (c *Client) ValidateAddressAsync(ctx context.Context, address dcrutil.Addre
 	return (*FutureValidateAddressResult)(c.sendCmd(ctx, cmd))
 }
 
-// ValidateAddress returns information about the given Decred address.
+// ValidateAddress returns information about the given Hdfchain address.
 func (c *Client) ValidateAddress(ctx context.Context, address dcrutil.Address) (*chainjson.ValidateAddressChainResult, error) {
 	return c.ValidateAddressAsync(ctx, address).Receive()
 }
@@ -1102,7 +1102,7 @@ func (c *Client) EstimateSmartFeeAsync(ctx context.Context, confirmations int64,
 	return (*FutureEstimateSmartFeeResult)(c.sendCmd(ctx, cmd))
 }
 
-// EstimateSmartFee returns an estimation of a transaction fee rate (in dcr/KB)
+// EstimateSmartFee returns an estimation of a transaction fee rate (in hdf/KB)
 // that new transactions should pay if they desire to be mined in up to
 // 'confirmations' blocks.
 //

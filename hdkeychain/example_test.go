@@ -1,5 +1,5 @@
 // Copyright (c) 2014 The btcsuite developers
-// Copyright (c) 2015-2020 The Decred developers
+// Copyright (c) 2015-2020 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -122,7 +122,7 @@ func Example_defaultWalletLayout() {
 	}
 
 	// Get and show the address associated with the extended keys for the
-	// main Decred network.
+	// main Hdfchain network.
 	//
 	// pubKeyHashAddr is a convenience function to convert an extended
 	// pubkey to a standard pay-to-pubkey-hash address.

@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2015 The btcsuite developers
-// Copyright (c) 2015-2019 The Decred developers
+// Copyright (c) 2015-2019 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -864,7 +864,7 @@ func (r *FutureSessionResult) Receive() (*chainjson.SessionResult, error) {
 //
 // See Session for the blocking version and more details.
 //
-// NOTE: This is a Decred extension.
+// NOTE: This is a Hdfchain extension.
 func (c *Client) SessionAsync(ctx context.Context) *FutureSessionResult {
 	// Not supported in HTTP POST mode.
 	if c.config.HTTPPostMode {
@@ -879,7 +879,7 @@ func (c *Client) SessionAsync(ctx context.Context) *FutureSessionResult {
 //
 // This RPC requires the client to be running in websocket mode.
 //
-// NOTE: This is a Decred extension.
+// NOTE: This is a Hdfchain extension.
 func (c *Client) Session(ctx context.Context) (*chainjson.SessionResult, error) {
 	return c.SessionAsync(ctx).Receive()
 }
@@ -912,7 +912,7 @@ func (r *FutureTicketFeeInfoResult) Receive() (*chainjson.TicketFeeInfoResult, e
 //
 // See TicketFeeInfo for the blocking version and more details.
 //
-// NOTE: This is a Decred extension.
+// NOTE: This is a Hdfchain extension.
 func (c *Client) TicketFeeInfoAsync(ctx context.Context, blocks *uint32, windows *uint32) *FutureTicketFeeInfoResult {
 	// Not supported in HTTP POST mode.
 	if c.config.HTTPPostMode {
@@ -936,7 +936,7 @@ func (c *Client) TicketFeeInfoAsync(ctx context.Context, blocks *uint32, windows
 //
 // This RPC requires the client to be running in websocket mode.
 //
-// NOTE: This is a Decred extension.
+// NOTE: This is a Hdfchain extension.
 func (c *Client) TicketFeeInfo(ctx context.Context, blocks *uint32, windows *uint32) (*chainjson.TicketFeeInfoResult, error) {
 	return c.TicketFeeInfoAsync(ctx, blocks, windows).Receive()
 }
@@ -974,7 +974,7 @@ func (r *FutureTicketVWAPResult) Receive() (dcrutil.Amount, error) {
 //
 // See TicketVWAP for the blocking version and more details.
 //
-// NOTE: This is a Decred extension.
+// NOTE: This is a Hdfchain extension.
 func (c *Client) TicketVWAPAsync(ctx context.Context, start *uint32, end *uint32) *FutureTicketVWAPResult {
 	// Not supported in HTTP POST mode.
 	if c.config.HTTPPostMode {
@@ -989,7 +989,7 @@ func (c *Client) TicketVWAPAsync(ctx context.Context, start *uint32, end *uint32
 //
 // This RPC requires the client to be running in websocket mode.
 //
-// NOTE: This is a Decred extension.
+// NOTE: This is a Hdfchain extension.
 func (c *Client) TicketVWAP(ctx context.Context, start *uint32, end *uint32) (dcrutil.Amount, error) {
 	return c.TicketVWAPAsync(ctx, start, end).Receive()
 }
@@ -1022,7 +1022,7 @@ func (r *FutureTxFeeInfoResult) Receive() (*chainjson.TxFeeInfoResult, error) {
 //
 // See TxFeeInfo for the blocking version and more details.
 //
-// NOTE: This is a Decred extension.
+// NOTE: This is a Hdfchain extension.
 func (c *Client) TxFeeInfoAsync(ctx context.Context, blocks *uint32, start *uint32, end *uint32) *FutureTxFeeInfoResult {
 	// Not supported in HTTP POST mode.
 	if c.config.HTTPPostMode {
@@ -1037,7 +1037,7 @@ func (c *Client) TxFeeInfoAsync(ctx context.Context, blocks *uint32, start *uint
 //
 // This RPC requires the client to be running in websocket mode.
 //
-// NOTE: This is a Decred extension.
+// NOTE: This is a Hdfchain extension.
 func (c *Client) TxFeeInfo(ctx context.Context, blocks *uint32, start *uint32, end *uint32) (*chainjson.TxFeeInfoResult, error) {
 	return c.TxFeeInfoAsync(ctx, blocks, start, end).Receive()
 }

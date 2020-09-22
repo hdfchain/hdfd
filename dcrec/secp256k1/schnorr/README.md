@@ -53,12 +53,12 @@ which means there are a number of variations that are not compatible with each
 other.
 
 In addition, many of the standardization attempts have various disadvantages
-that make them unsuitable for use in Decred.  Some of these details will be
+that make them unsuitable for use in Hdfchain.  Some of these details will be
 discussed further in the Design section along with providing some insight into
 the design decisions made.
 
 Consequently, this package implements a custom Schnorr-based signature scheme
-named `EC-Schnorr-HDFv0` suitable for use in Decred.
+named `EC-Schnorr-HDFv0` suitable for use in Hdfchain.
 
 The following provides a high-level overview of the key design features of the
 scheme:
@@ -84,8 +84,8 @@ Signature Generation by Smart Cards in the Journal of Cryptology, Vol.4,
 pp.161-174, 1991 (`Sc91`).  There are other variants not covered here as well.
 
 Further, each of these schemes have various disadvantages that are discussed
-more in the following sections which make them unsuitable for use with Decred.
-Consequently, Decred makes use of a custom scheme named `EC-Schnorr-HDFv0`.
+more in the following sections which make them unsuitable for use with Hdfchain.
+Consequently, Hdfchain makes use of a custom scheme named `EC-Schnorr-HDFv0`.
 
 That said, the various schemes are all fairly simple variations which involve
 using an agreed upon elliptic curve with generator `G`, and hash function `hash`
@@ -151,7 +151,7 @@ important disadvantages that the second approach does not:
   prevents the ability to take advantage of their homomorphic properties
 
 Further, when the size of the field elements for the elliptic curve is the same
-size as the hash function, as is the case in Decred, techniques which are
+size as the hash function, as is the case in Hdfchain, techniques which are
 discussed in the next section can be used to make `(R, s)` signatures the same
 size as `(e, s)` signatures.
 
@@ -196,7 +196,7 @@ coordinates since this choice also ties into that. Also, one of the variants
 reverses the order of the concatenation of the message `m` and the point `R`.
 
 Combining these details with the following additional information specific to
-Decred results in the choice of `e = BLAKE-256(R.x || m)` for the challenge with
+Hdfchain results in the choice of `e = BLAKE-256(R.x || m)` for the challenge with
 additional restrictions on `R` to ensure verifiers can reconstruct the full
 point:
 
@@ -289,10 +289,10 @@ concatenated together to form a 64-byte signature.
 
 See the file `signature_test.go` for test vectors.
 
-## Schnorr use in Decred
+## Schnorr use in Hdfchain
 
 At the time of this writing, Schnorr signatures are not yet in widespread use on
-the Decred network, largely due to the current lack of support in wallets and
+the Hdfchain network, largely due to the current lack of support in wallets and
 infrastructure for secure multi-party and threshold signatures.
 
 However, the consensus rules and scripting engine supports the necessary

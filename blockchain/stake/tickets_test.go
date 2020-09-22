@@ -1,4 +1,4 @@
-// Copyright (c) 2015-2020 The Decred developers
+// Copyright (c) 2015-2020 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -78,7 +78,7 @@ func (s *mockStakeParams) TicketExpiryBlocks() uint32 {
 }
 
 // mockRegNetParams returns mock regression test stake parameters to use
-// throughout the tests.  They match the Decred regression test network params
+// throughout the tests.  They match the Hdfchain regression test network params
 // as of the time this comment was written.
 func mockRegNetParams() *mockStakeParams {
 	return (*mockStakeParams)(chaincfg.RegNetParams())

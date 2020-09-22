@@ -1,4 +1,4 @@
-// Copyright (c) 2020 The Decred developers
+// Copyright (c) 2020 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -21,10 +21,10 @@ hash combination.
 
 A comprehensive suite of tests is provided to ensure proper functionality.
 
-ECDSA use in Decred
+ECDSA use in Hdfchain
 
 At the time of this writing, ECDSA signatures are heavily used for proving coin
-ownership in Decred as the vast majority of transactions consist of what is
+ownership in Hdfchain as the vast majority of transactions consist of what is
 effectively transferring ownership of coins to a public key associated with a
 private key only known to the recipient of the coins along with an encumbrance
 that requires an ECDSA signature that proves the new owner possesses the private

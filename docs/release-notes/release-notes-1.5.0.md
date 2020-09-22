@@ -15,13 +15,13 @@ This release of hdfd introduces a large number of updates.  Some of the key high
 * Infrastructure improvements
 * Quality assurance changes
 
-For those unfamiliar with the voting process in Decred, all code in order to support block header commitments is already included in this release, however its enforcement will remain dormant until the stakeholders vote to activate it.
+For those unfamiliar with the voting process in Hdfchain, all code in order to support block header commitments is already included in this release, however its enforcement will remain dormant until the stakeholders vote to activate it.
 
 For reference, block header commitments were originally proposed and approved for initial implementation via the following Politeia proposal:
 - [Block Header Commitments Consensus Change](https://proposals.clkj.ltd/proposals/0a1ff846ec271184ea4e3a921a3ccd8d478f69948b984445ee1852f272d54c58)
 
 
-The following Decred Change Proposal (DCP) describes the proposed changes in detail and provides a full technical specification:
+The following Hdfchain Change Proposal (DCP) describes the proposed changes in detail and provides a full technical specification:
 - [DCP0005](https://github.com/hdfchain/dcps/blob/master/dcp-0005/dcp-0005.mediawiki)
 
 **It is important for everyone to upgrade their software to this latest release even if you don't intend to vote in favor of the agenda.**
@@ -38,7 +38,7 @@ Once this migration has been completed, it will no longer be possible to downgra
 
 A new vote with the id `headercommitments` is now available as of this release.  After upgrading, stakeholders may set their preferences through their wallet or Voting Service Provider's (VSP) website.
 
-The primary goal of this change is to increase the security and efficiency of lightweight clients, such as Decrediton in its lightweight mode and the dcrandroid/dcrios mobile wallets, as well as add infrastructure that paves the
+The primary goal of this change is to increase the security and efficiency of lightweight clients, such as Hdfchainiton in its lightweight mode and the dcrandroid/dcrios mobile wallets, as well as add infrastructure that paves the
 way for several future scalability enhancements.
 
 A high level overview aimed at a general audience including a cost benefit analysis can be found in the  [Politeia proposal](https://proposals.clkj.ltd/proposals/0a1ff846ec271184ea4e3a921a3ccd8d478f69948b984445ee1852f272d54c58).
@@ -133,11 +133,11 @@ See the [getblockchaininfo JSON-RPC API Documentation](https://github.com/hdfcha
 
 #### New Optional Version Parameter on Script Decode RPC (`decodescript`)
 
-The `decodescript` RPC now accepts an additional optional parameter to specify the script version.  The only currently supported script version in Decred is version 0 which means decoding scripts with versions other than 0 will be seen as non standard.
+The `decodescript` RPC now accepts an additional optional parameter to specify the script version.  The only currently supported script version in Hdfchain is version 0 which means decoding scripts with versions other than 0 will be seen as non standard.
 
 #### Removal of Deprecated Block Template RPC (`getblocktemplate`)
 
-The previously deprecated `getblocktemplate` RPC is no longer available.  All known miners are already using the preferred `getwork` RPC since Decred's block header supports more than enough nonce space to keep mining hardware busy without needing to resort to building custom templates with less efficient extra nonce coinbase workarounds.
+The previously deprecated `getblocktemplate` RPC is no longer available.  All known miners are already using the preferred `getwork` RPC since Hdfchain's block header supports more than enough nonce space to keep mining hardware busy without needing to resort to building custom templates with less efficient extra nonce coinbase workarounds.
 
 #### Additional RPCs Available To Limited Access Users
 

@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2016 The btcsuite developers
-// Copyright (c) 2015-2020 The Decred developers
+// Copyright (c) 2015-2020 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -122,8 +122,8 @@ type jsonRequest struct {
 	responseChan   chan *response
 }
 
-// Client represents a Decred RPC client which allows easy access to the
-// various RPC methods available on a Decred RPC server.  Each of the wrapper
+// Client represents a Hdfchain RPC client which allows easy access to the
+// various RPC methods available on a Hdfchain RPC server.  Each of the wrapper
 // functions handle the details of converting the passed and return types to and
 // from the underlying JSON types which are required for the JSON-RPC
 // invocations

@@ -1,5 +1,5 @@
 // Copyright (c) 2013-2016 The btcsuite developers
-// Copyright (c) 2015-2017 The Decred developers
+// Copyright (c) 2015-2017 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -185,7 +185,7 @@ func NewBlockHeader(version int32, prevHash *chainhash.Hash,
 	}
 }
 
-// readBlockHeader reads a Decred block header from r.  See Deserialize for
+// readBlockHeader reads a Hdfchain block header from r.  See Deserialize for
 // decoding block headers stored to disk, such as in a database, as opposed to
 // decoding from the wire.
 func readBlockHeader(r io.Reader, pver uint32, bh *BlockHeader) error {
@@ -196,7 +196,7 @@ func readBlockHeader(r io.Reader, pver uint32, bh *BlockHeader) error {
 		&bh.Nonce, &bh.ExtraData, &bh.StakeVersion)
 }
 
-// writeBlockHeader writes a Decred block header to w.  See Serialize for
+// writeBlockHeader writes a Hdfchain block header to w.  See Serialize for
 // encoding block headers to be stored to disk, such as in a database, as
 // opposed to encoding for the wire.
 func writeBlockHeader(w io.Writer, pver uint32, bh *BlockHeader) error {

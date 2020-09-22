@@ -5,14 +5,14 @@ improvements, and other quality assurance changes.
 
 While it is not visible in this release, significant infrastructure work has
 also been done this release cycle towards porting the Lightning Network (LN)
-daemon which will ultimately allow LN payments to be backed by Decred.
+daemon which will ultimately allow LN payments to be backed by Hdfchain.
 
 ## Notable Changes
 
 ### Faster Block Validation
 
 A significant portion of block validation involves handling the stake tickets
-which form an integral part of Decred's hybrid proof-of-work and proof-of-stake
+which form an integral part of Hdfchain's hybrid proof-of-work and proof-of-stake
 system.  The code which handles this portion of validation has been
 significantly optimized in this release such that overall block validation is
 up to approximately 3 times faster depending on the specific underlying hardware

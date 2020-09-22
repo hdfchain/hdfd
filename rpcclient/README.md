@@ -5,9 +5,9 @@ rpcclient
 [![ISC License](https://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
 [![Doc](https://img.shields.io/badge/doc-reference-blue.svg)](https://pkg.go.dev/github.com/hdfchain/hdfd/rpcclient)
 
-rpcclient implements a Websocket-enabled Decred JSON-RPC client package written
+rpcclient implements a Websocket-enabled Hdfchain JSON-RPC client package written
 in [Go](https://golang.org/).  It provides a robust and easy to use client for
-interfacing with a Decred RPC server that uses a hdfd compatible Decred
+interfacing with a Hdfchain RPC server that uses a hdfd compatible Hdfchain
 JSON-RPC API.
 
 ## Status

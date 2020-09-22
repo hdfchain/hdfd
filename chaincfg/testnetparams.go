@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2016 The btcsuite developers
-// Copyright (c) 2015-2019 The Decred developers
+// Copyright (c) 2015-2019 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -17,7 +17,7 @@ import (
 // This network is sometimes simply called "testnet".
 // This is the third public iteration of testnet.
 func TestNet3Params() *Params {
-	// testNetPowLimit is the highest proof of work value a Decred block
+	// testNetPowLimit is the highest proof of work value a Hdfchain block
 	// can have for the test network.  It is the value 2^232 - 1.
 	testNetPowLimit := new(big.Int).Sub(new(big.Int).Lsh(bigOne, 232), bigOne)
 
@@ -217,7 +217,7 @@ func TestNet3Params() *Params {
 		SLIP0044CoinType: 1,  // SLIP0044, Testnet (all coins)
 		LegacyCoinType:   11, // for backwards compatibility
 
-		// Decred PoS parameters
+		// Hdfchain PoS parameters
 		MinimumStakeDiff:        20000000, // 0.2 Coin
 		TicketPoolSize:          1024,
 		TicketsPerBlock:         5,
@@ -237,7 +237,7 @@ func TestNet3Params() *Params {
 		StakeMajorityMultiplier: 3,
 		StakeMajorityDivisor:    4,
 
-		// Decred organization related parameters.
+		// Hdfchain organization related parameters.
 		// Organization address is TcrypGAcGCRVXrES7hWqVZb5oLJKCZEtoL1.
 		OrganizationPkScript:        hexDecode("a914d585cd7426d25b4ea5faf1e6987aacfeda3db94287"),
 		OrganizationPkScriptVersion: 0,

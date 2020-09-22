@@ -3,11 +3,11 @@
 This release of hdfd primarily introduces a new consensus vote agenda which
 allows the stakeholders to decide whether or not to activate the features needed
 for providing full support for Lightning Network.  For those unfamiliar with the
-voting process in Decred, this means that all code in order to support these
+voting process in Hdfchain, this means that all code in order to support these
 features is already included in this release, however its enforcement will
 remain dormant until the stakeholders vote to activate it.
 
-The following Decred Change Proposals (DCPs) describe the proposed changes in detail:
+The following Hdfchain Change Proposals (DCPs) describe the proposed changes in detail:
 - [DCP0002](https://github.com/hdfchain/dcps/blob/master/dcp-0002/dcp-0002.mediawiki)
 - [DCP0003](https://github.com/hdfchain/dcps/blob/master/dcp-0003/dcp-0003.mediawiki)
 

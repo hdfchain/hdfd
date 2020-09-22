@@ -5,16 +5,16 @@ txscript
 [![ISC License](https://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
 [![Doc](https://img.shields.io/badge/doc-reference-blue.svg)](https://pkg.go.dev/github.com/hdfchain/hdfd/txscript/v3)
 
-Package txscript implements the Decred transaction script language.  There is
+Package txscript implements the Hdfchain transaction script language.  There is
 a comprehensive test suite.
 
 This package has intentionally been designed so it can be used as a standalone
-package for any projects needing to use or validate Decred transaction scripts.
+package for any projects needing to use or validate Hdfchain transaction scripts.
 
-## Decred Scripts
+## Hdfchain Scripts
 
-Decred provides a stack-based, FORTH-like language for the scripts in
-the Decred transactions.  This language is not turing complete
+Hdfchain provides a stack-based, FORTH-like language for the scripts in
+the Hdfchain transactions.  This language is not turing complete
 although it is still fairly powerful.
 
 ## Installation and Updating
@@ -26,7 +26,7 @@ $ go get -u github.com/hdfchain/hdfd/txscript
 ## Examples
 
 * [Standard Pay-to-pubkey-hash Script](https://pkg.go.dev/github.com/hdfchain/hdfd/txscript/v3#example-PayToAddrScript)
-  Demonstrates creating a script which pays to a Decred address.  It also
+  Demonstrates creating a script which pays to a Hdfchain address.  It also
   prints the created script hex and uses the DisasmString function to display
   the disassembled script.
 

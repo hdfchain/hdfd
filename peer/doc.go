@@ -1,23 +1,23 @@
 // Copyright (c) 2015-2016 The btcsuite developers
-// Copyright (c) 2016-2020 The Decred developers
+// Copyright (c) 2016-2020 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
 /*
-Package peer provides a common base for creating and managing Decred network
+Package peer provides a common base for creating and managing Hdfchain network
 peers.
 
 This package builds upon the wire package, which provides the fundamental
-primitives necessary to speak the Decred wire protocol, in order to simplify
+primitives necessary to speak the Hdfchain wire protocol, in order to simplify
 the process of creating fully functional peers.  In essence, it provides a
 common base for creating concurrent safe fully validating nodes, Simplified
 Payment Verification (SPV) nodes, proxies, etc.
 
 A quick overview of the major features peer provides are as follows:
 
- - Provides a basic concurrent safe Decred peer for handling hdfchain
+ - Provides a basic concurrent safe Hdfchain peer for handling hdfchain
    communications via the peer-to-peer protocol
- - Full duplex reading and writing of Decred protocol messages
+ - Full duplex reading and writing of Hdfchain protocol messages
  - Automatic handling of the initial handshake process including protocol
    version negotiation
  - Asynchronous message queuing of outbound messages with optional channel for
@@ -27,10 +27,10 @@ A quick overview of the major features peer provides are as follows:
      incoming connections so they have flexibility to establish connections as
      they see fit (proxies, etc)
    - User agent name and version
-   - Decred network
+   - Hdfchain network
    - Service support signalling (full nodes, etc)
    - Maximum supported protocol version
-   - Ability to register callbacks for handling Decred protocol messages
+   - Ability to register callbacks for handling Hdfchain protocol messages
  - Inventory message batching and send trickling with known inventory detection
    and avoidance
  - Automatic periodic keep-alive pinging and pong responses

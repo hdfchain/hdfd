@@ -1,4 +1,4 @@
-// Copyright (c) 2018-2020 The Decred developers
+// Copyright (c) 2018-2020 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -19,7 +19,7 @@ func TestCheckSignatureEncoding(t *testing.T) {
 		sig  []byte
 		err  error
 	}{{
-		// signature from Decred blockchain tx
+		// signature from Hdfchain blockchain tx
 		// 76634e947f49dfc6228c3e8a09cd3e9e15893439fc06df7df0fc6f08d659856c:0
 		name: "valid signature 1",
 		sig: hexToBytes("3045022100cd496f2ab4fe124f977ffe3caa09f7576d8a34156" +
@@ -27,7 +27,7 @@ func TestCheckSignatureEncoding(t *testing.T) {
 			"69d3da78004004c970790862fc03"),
 		err: nil,
 	}, {
-		// signature from Decred blockchain tx
+		// signature from Hdfchain blockchain tx
 		// 76634e947f49dfc6228c3e8a09cd3e9e15893439fc06df7df0fc6f08d659856c:1
 		name: "valid signature 2",
 		sig: hexToBytes("3044022036334e598e51879d10bf9ce3171666bc2d1bbba6164" +

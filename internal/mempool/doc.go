@@ -1,11 +1,11 @@
-// Copyright (c) 2018-2020 The Decred developers
+// Copyright (c) 2018-2020 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
 /*
-Package mempool provides a policy-enforced pool of unmined Decred transactions.
+Package mempool provides a policy-enforced pool of unmined Hdfchain transactions.
 
-A key responsibility of the Decred network is mining transactions – regular
+A key responsibility of the Hdfchain network is mining transactions – regular
 transactions and stake transactions – into blocks.  In order to facilitate
 this, the mining process relies on having a readily-available source of
 transactions to include in a block that is being solved.
@@ -26,7 +26,7 @@ for a transaction to be considered standard are that it is of the
 most-recently supported version, finalized, does not exceed a specific size,
 and only consists of specific script forms.
 
-Since this package does not deal with other Decred specifics such as network
+Since this package does not deal with other Hdfchain specifics such as network
 communication and transaction relay, it returns a list of transactions that were
 accepted which gives the caller a high level of flexibility in how they want to
 proceed.  Typically, this will involve things such as relaying the transactions

@@ -1,5 +1,5 @@
 // Copyright (c) 2013-2014 The btcsuite developers
-// Copyright (c) 2015-2018 The Decred developers
+// Copyright (c) 2015-2018 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -100,7 +100,7 @@ func ParseSignature(sigStr []byte) (*Signature, error) {
 	return parseSig(sigStr, false)
 }
 
-// ParseDERSignature offers a legacy function for plugging into Decred, which
+// ParseDERSignature offers a legacy function for plugging into Hdfchain, which
 // is based off btcec.
 func ParseDERSignature(sigStr []byte) (*Signature, error) {
 	return parseSig(sigStr, false)

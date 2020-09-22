@@ -299,7 +299,7 @@ All commits since the last release may be viewed on GitHub [here](https://github
 - mempool: cleaner ([hdfchain/hdfd#1050](https://github.com/hdfchain/hdfd/pull/1050))
 - multi: fix misspell linter warnings ([hdfchain/hdfd#1054](https://github.com/hdfchain/hdfd/pull/1054))
 - dep: sync ([hdfchain/hdfd#1091](https://github.com/hdfchain/hdfd/pull/1091))
-- multi: Properly capitalize Decred ([hdfchain/hdfd#1102](https://github.com/hdfchain/hdfd/pull/1102))
+- multi: Properly capitalize Hdfchain ([hdfchain/hdfd#1102](https://github.com/hdfchain/hdfd/pull/1102))
 - build: Correct semver build handling ([hdfchain/hdfd#1097](https://github.com/hdfchain/hdfd/pull/1097))
 - main: Make func definition style consistent ([hdfchain/hdfd#1114](https://github.com/hdfchain/hdfd/pull/1114))
 - main: Allow semver prerel via linker flags ([hdfchain/hdfd#1128](https://github.com/hdfchain/hdfd/pull/1128))

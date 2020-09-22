@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# Copyright (c) 2020 The Decred developers
+# Copyright (c) 2020 The Hdfchain developers
 # Use of this source code is governed by an ISC
 # license that can be found in the LICENSE file.
 #

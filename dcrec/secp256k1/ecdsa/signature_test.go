@@ -1,5 +1,5 @@
 // Copyright (c) 2013-2016 The btcsuite developers
-// Copyright (c) 2015-2020 The Decred developers
+// Copyright (c) 2015-2020 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -36,7 +36,7 @@ func TestSignatureParsing(t *testing.T) {
 		sig  []byte
 		err  error
 	}{{
-		// signature from Decred blockchain tx
+		// signature from Hdfchain blockchain tx
 		// 76634e947f49dfc6228c3e8a09cd3e9e15893439fc06df7df0fc6f08d659856c:0
 		name: "valid signature 1",
 		sig: hexToBytes("3045022100cd496f2ab4fe124f977ffe3caa09f7576d8a34156" +
@@ -44,7 +44,7 @@ func TestSignatureParsing(t *testing.T) {
 			"69d3da78004004c970790862fc03"),
 		err: nil,
 	}, {
-		// signature from Decred blockchain tx
+		// signature from Hdfchain blockchain tx
 		// 76634e947f49dfc6228c3e8a09cd3e9e15893439fc06df7df0fc6f08d659856c:1
 		name: "valid signature 2",
 		sig: hexToBytes("3044022036334e598e51879d10bf9ce3171666bc2d1bbba6164" +
@@ -242,7 +242,7 @@ func TestSignatureSerialize(t *testing.T) {
 		// fda204502a3345e08afd6af27377c052e77f1fefeaeb31bdd45f1e1237ca5470
 		//
 		// Note that signatures with an S component that is > half the group
-		// order are neither allowed nor produced in Decred, so this has been
+		// order are neither allowed nor produced in Hdfchain, so this has been
 		// modified to expect the equally valid low S signature variant.
 		"valid 3 - s most significant bit is one",
 		&Signature{

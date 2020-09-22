@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2016 The btcsuite developers
-// Copyright (c) 2015-2020 The Decred developers
+// Copyright (c) 2015-2020 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -319,8 +319,8 @@ func (k *ExtendedKey) Child(i uint32) (*ExtendedKey, error) {
 
 		// Strip leading zeroes to maintain legacy behavior.  Note that per
 		// [BIP32] this should be the fully zero-padded 32-bytes, however, the
-		// Decred variation strips leading zeros for legacy reasons and changing
-		// it now would break derivation for a lot of Decred wallets that rely
+		// Hdfchain variation strips leading zeros for legacy reasons and changing
+		// it now would break derivation for a lot of Hdfchain wallets that rely
 		// on this behavior.
 		for len(childKey) > 0 && childKey[0] == 0x00 {
 			childKey = childKey[1:]

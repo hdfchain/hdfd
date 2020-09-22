@@ -3,7 +3,7 @@
 This release of hdfd introduces a new consensus vote agenda which allows the
 stakeholders to decide whether or not to activate changes needed to modify the
 sequence lock handling which is required for providing full support for the
-Lightning Network.  For those unfamiliar with the voting process in Decred, this
+Lightning Network.  For those unfamiliar with the voting process in Hdfchain, this
 means that all code in order to make the necessary changes is already included
 in this release, however its enforcement will remain dormant until the
 stakeholders vote to activate it.
@@ -16,7 +16,7 @@ the RPC server such as a new method to query the state of the chain and more
 easily supporting external RPC connections over TLS, infrastructure
 improvements, and other quality assurance changes.
 
-The following Decred Change Proposals (DCP) describes the proposed changes in detail:
+The following Hdfchain Change Proposals (DCP) describes the proposed changes in detail:
 - [DCP0004](https://github.com/hdfchain/dcps/blob/master/dcp-0004/dcp-0004.mediawiki)
 
 **It is important for everyone to upgrade their software to this latest release

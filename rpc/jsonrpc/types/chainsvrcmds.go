@@ -1,5 +1,5 @@
 // Copyright (c) 2014 The btcsuite developers
-// Copyright (c) 2015-2019 The Decred developers
+// Copyright (c) 2015-2019 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -112,7 +112,7 @@ func NewCreateRawSSRtxCmd(inputs []TransactionInput, fee *float64) *CreateRawSSR
 }
 
 // TransactionInput represents the inputs to a transaction.  Specifically a
-// transaction hash and output number pair. Contains Decred additions.
+// transaction hash and output number pair. Contains Hdfchain additions.
 type TransactionInput struct {
 	Amount float64 `json:"amount,omitempty"`
 	Txid   string  `json:"txid"`

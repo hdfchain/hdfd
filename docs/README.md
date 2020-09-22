@@ -21,7 +21,7 @@
 
 ### 1. About
 
-hdfd is a full node Decred implementation written in [Go](https://golang.org),
+hdfd is a full node Hdfchain implementation written in [Go](https://golang.org),
 and is licensed under the [copyfree](http://www.copyfree.org) ISC License.
 
 This software is currently under active development.  It is extremely stable and
@@ -172,39 +172,39 @@ https://clkj.ltd/community/
 The following versioned modules are provided by hdfd repository:
 
 * [rpcclient/v4](https://github.com/hdfchain/hdfd/tree/master/rpcclient) - Implements
-  a robust and easy to use Websocket-enabled Decred JSON-RPC client
+  a robust and easy to use Websocket-enabled Hdfchain JSON-RPC client
 * [dcrjson/v3](https://github.com/hdfchain/hdfd/tree/master/dcrjson) - Provides
-  infrastructure for working with Decred JSON-RPC APIs
+  infrastructure for working with Hdfchain JSON-RPC APIs
 * [rpc/jsonrpc/types](https://github.com/hdfchain/hdfd/tree/master/rpc/jsonrpc/types) -
   Provides concrete types via dcrjson for the chain server JSON-RPC commands,
   return values, and notifications
 * [wire](https://github.com/hdfchain/hdfd/tree/master/wire) - Implements the
-  Decred wire protocol
+  Hdfchain wire protocol
 * [peer/v2](https://github.com/hdfchain/hdfd/tree/master/peer) - Provides a common
-  base for creating and managing Decred network peers
+  base for creating and managing Hdfchain network peers
 * [blockchain/v2](https://github.com/hdfchain/hdfd/tree/master/blockchain) -
-  Implements Decred block handling and chain selection rules
+  Implements Hdfchain block handling and chain selection rules
   * [stake/v2](https://github.com/hdfchain/hdfd/tree/master/blockchain/stake) -
     Provides an API for working with stake transactions and other portions
     related to the Proof-of-Stake (PoS) system
   * [standalone](https://github.com/hdfchain/hdfd/tree/master/blockchain/standalone) -
-    Provides standalone functions useful for working with the Decred blockchain
+    Provides standalone functions useful for working with the Hdfchain blockchain
     consensus rules
 * [txscript/v2](https://github.com/hdfchain/hdfd/tree/master/txscript) -
-  Implements the Decred transaction scripting language
+  Implements the Hdfchain transaction scripting language
 * [dcrec](https://github.com/hdfchain/hdfd/tree/master/dcrec) - Provides constants
-  for the supported cryptographic signatures supported by Decred scripts
+  for the supported cryptographic signatures supported by Hdfchain scripts
   * [secp256k1/v2](https://github.com/hdfchain/hdfd/tree/master/dcrec/secp256k1) -
     Implements the secp256k1 elliptic curve
   * [edwards/v2](https://github.com/hdfchain/hdfd/tree/master/dcrec/edwards) -
     Implements the edwards25519 twisted Edwards curve
 * [database/v2](https://github.com/hdfchain/hdfd/tree/master/database) -
-  Provides a database interface for the Decred block chain
+  Provides a database interface for the Hdfchain block chain
 * [dcrutil/v2](https://github.com/hdfchain/hdfd/tree/master/dcrutil) - Provides
-  Decred-specific convenience functions and types
+  Hdfchain-specific convenience functions and types
 * [chaincfg/v2](https://github.com/hdfchain/hdfd/tree/master/chaincfg) - Defines
-  chain configuration parameters for the standard Decred networks and allows
-  callers to define their own custom Decred networks for testing puproses
+  chain configuration parameters for the standard Hdfchain networks and allows
+  callers to define their own custom Hdfchain networks for testing puproses
   * [chainhash](https://github.com/hdfchain/hdfd/tree/master/chaincfg/chainhash) -
     Provides a generic hash type and associated functions that allows the
     specific hash algorithm to be abstracted
@@ -212,11 +212,11 @@ The following versioned modules are provided by hdfd repository:
   function for creating a new TLS certificate key pair, typically used for
   encrypting RPC and websocket communications
 * [addrmgr](https://github.com/hdfchain/hdfd/tree/master/addrmgr) - Provides a
-  concurrency safe Decred network address manager
+  concurrency safe Hdfchain network address manager
 * [connmgr/v2](https://github.com/hdfchain/hdfd/tree/master/connmgr) - Implements
-  a generic Decred network connection manager
+  a generic Hdfchain network connection manager
 * [hdkeychain/v2](https://github.com/hdfchain/hdfd/tree/master/hdkeychain) -
-  Provides an API for working with  Decred hierarchical deterministic extended
+  Provides an API for working with  Hdfchain hierarchical deterministic extended
   keys
 * [gcs](https://github.com/hdfchain/hdfd/tree/master/gcs) - Provides an API for
   building and using Golomb-coded set filters useful for light clients such as
@@ -237,7 +237,7 @@ provided by the hdfd repository.
 
 **6. Simulation Network (--simnet)**
 
-When developing Decred applications or testing potential changes, it is often
+When developing Hdfchain applications or testing potential changes, it is often
 extremely useful to have a test network where transactions are actually mined
 into blocks, difficulty levels are low enough to generate blocks on demand, it
 is possible to easily cause chain reorganizations for testing purposes, and

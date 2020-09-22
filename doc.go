@@ -1,10 +1,10 @@
 // Copyright (c) 2013-2016 The btcsuite developers
-// Copyright (c) 2015-2020 The Decred developers
+// Copyright (c) 2015-2020 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
 /*
-hdfd is a full-node Decred implementation written in Go.
+hdfd is a full-node Hdfchain implementation written in Go.
 
 The default options are sane for most users.  This means hdfd will work 'out of
 the box' for most users.  However, there are also a wide variety of flags that

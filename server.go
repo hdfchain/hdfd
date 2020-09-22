@@ -1,5 +1,5 @@
 // Copyright (c) 2013-2016 The btcsuite developers
-// Copyright (c) 2015-2020 The Decred developers
+// Copyright (c) 2015-2020 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -86,7 +86,7 @@ const (
 
 var (
 	// userAgentName is the user agent name and is used to help identify
-	// ourselves to other Decred peers.
+	// ourselves to other Hdfchain peers.
 	userAgentName = "hdfd"
 
 	// userAgentVersion is the user agent version and is used to help
@@ -117,7 +117,7 @@ func (a simpleAddr) Network() string {
 // Ensure simpleAddr implements the net.Addr interface.
 var _ net.Addr = simpleAddr{}
 
-// broadcastMsg provides the ability to house a Decred message to be broadcast
+// broadcastMsg provides the ability to house a Hdfchain message to be broadcast
 // to all connected peers except specified excluded peers.
 type broadcastMsg struct {
 	message      wire.Message
@@ -432,8 +432,8 @@ func (ps *peerState) ResolveLocalAddress(netType addrmgr.NetworkAddress, addrMgr
 	}
 }
 
-// server provides a Decred server for handling communications to and from
-// Decred peers.
+// server provides a Hdfchain server for handling communications to and from
+// Hdfchain peers.
 type server struct {
 	// The following variables must only be used atomically.
 	// Putting the uint64s first makes them 64-bit aligned for 32-bit systems.

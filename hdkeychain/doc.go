@@ -1,10 +1,10 @@
 // Copyright (c) 2014 The btcsuite developers
-// Copyright (c) 2015-2019 The Decred developers
+// Copyright (c) 2015-2019 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
 /*
-Package hdkeychain provides an API for Decred hierarchical deterministic
+Package hdkeychain provides an API for Hdfchain hierarchical deterministic
 extended keys (based on BIP0032).
 
 The ability to implement hierarchical deterministic wallets depends on the
@@ -75,7 +75,7 @@ looks like the following:
 
 Network
 
-Extended keys are much like normal Decred addresses in that they have version
+Extended keys are much like normal Hdfchain addresses in that they have version
 bytes which tie them to a specific network.  The network that an extended key is
 associated with is specified when creating and decoding the key.  In the case of
 decoding, an error will be returned if a given encoded extended key is not for

@@ -6,11 +6,11 @@ chaincfg
 [![Doc](https://img.shields.io/badge/doc-reference-blue.svg)](https://pkg.go.dev/github.com/hdfchain/hdfd/chaincfg/v3)
 
 Package chaincfg defines chain configuration parameters for the four standard
-Decred networks.
+Hdfchain networks.
 
 Although this package was primarily written for hdfd, it has intentionally been
 designed so it can be used as a standalone package for any projects needing to
-use parameters for the standard Decred networks or for projects needing to
+use parameters for the standard Hdfchain networks or for projects needing to
 define their own network.
 
 ## Sample Use
@@ -27,7 +27,7 @@ import (
 	"github.com/hdfchain/hdfd/chaincfg/v2"
 )
 
-var testnet = flag.Bool("testnet", false, "operate on the testnet Decred network")
+var testnet = flag.Bool("testnet", false, "operate on the testnet Hdfchain network")
 
 // By default (without -testnet), use mainnet.
 var chainParams = chaincfg.MainNetParams()

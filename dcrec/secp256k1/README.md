@@ -14,7 +14,7 @@ https://www.secg.org/sec2-v2.pdf for details on the standard.
 
 In addition, sub packages are provided to produce, verify, parse, and serialize
 ECDSA signatures and EC-Schnorr-HDFv0 (a custom Schnorr-based signature scheme
-specific to Decred) signatures.  See the README.md files in the relevant sub
+specific to Hdfchain) signatures.  See the README.md files in the relevant sub
 packages for more details about those aspects.
 
 An overview of the features provided by this package are as follows:
@@ -49,10 +49,10 @@ use optimized secp256k1 elliptic curve cryptography.
 Finally, a comprehensive suite of tests is provided to provide a high level of
 quality assurance.
 
-## secp256k1 use in Decred
+## secp256k1 use in Hdfchain
 
 At the time of this writing, the primary public key cryptography in widespread
-use on the Decred network used to secure coins is based on elliptic curves
+use on the Hdfchain network used to secure coins is based on elliptic curves
 defined by the secp256k1 domain parameters.
 
 ## Installation and Updating

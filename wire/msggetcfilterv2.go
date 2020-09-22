@@ -1,4 +1,4 @@
-// Copyright (c) 2019-2020 The Decred developers
+// Copyright (c) 2019-2020 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -21,7 +21,7 @@ type MsgGetCFilterV2 struct {
 	BlockHash chainhash.Hash
 }
 
-// BtcDecode decodes r using the Decred protocol encoding into the receiver.
+// BtcDecode decodes r using the Hdfchain protocol encoding into the receiver.
 // This is part of the Message interface implementation.
 func (msg *MsgGetCFilterV2) BtcDecode(r io.Reader, pver uint32) error {
 	const op = "MsgGetCFilterV2.BtcDecode"
@@ -34,7 +34,7 @@ func (msg *MsgGetCFilterV2) BtcDecode(r io.Reader, pver uint32) error {
 	return readElement(r, &msg.BlockHash)
 }
 
-// BtcEncode encodes the receiver to w using the Decred protocol encoding.
+// BtcEncode encodes the receiver to w using the Hdfchain protocol encoding.
 // This is part of the Message interface implementation.
 func (msg *MsgGetCFilterV2) BtcEncode(w io.Writer, pver uint32) error {
 	const op = "MsgGetCFilterV2.BtcEncode"
@@ -60,7 +60,7 @@ func (msg *MsgGetCFilterV2) MaxPayloadLength(pver uint32) uint32 {
 	return chainhash.HashSize
 }
 
-// NewMsgGetCFilterV2 returns a new Decred getcfilterv2 message that conforms
+// NewMsgGetCFilterV2 returns a new Hdfchain getcfilterv2 message that conforms
 // to the Message interface using the passed parameters.
 func NewMsgGetCFilterV2(blockHash *chainhash.Hash) *MsgGetCFilterV2 {
 	return &MsgGetCFilterV2{

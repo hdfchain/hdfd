@@ -1,5 +1,5 @@
 // Copyright (c) 2013-2016 The btcsuite developers
-// Copyright (c) 2015-2020 The Decred developers
+// Copyright (c) 2015-2020 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -307,7 +307,7 @@ func CheckTransactionSanity(tx *wire.MsgTx, params *chaincfg.Params) error {
 	// must not be negative or more than the max allowed per transaction.  Also,
 	// the total of all outputs must abide by the same restrictions.  All
 	// amounts in a transaction are in a unit value known as an atom.  One
-	// Decred is a quantity of atoms as defined by the AtomsPerCoin constant.
+	// Hdfchain is a quantity of atoms as defined by the AtomsPerCoin constant.
 	//
 	// Also ensure that non-stake transaction output scripts do not contain any
 	// stake opcodes.
@@ -329,7 +329,7 @@ func CheckTransactionSanity(tx *wire.MsgTx, params *chaincfg.Params) error {
 		}
 
 		// Two's complement int64 overflow guarantees that any overflow is
-		// detected and reported.  This is impossible for Decred, but perhaps
+		// detected and reported.  This is impossible for Hdfchain, but perhaps
 		// possible if an alt increases the total money supply.
 		totalAtom += atom
 		if totalAtom < 0 {
@@ -1458,7 +1458,7 @@ func (b *BlockChain) checkBlockContext(block *dcrutil.Block, prevNode *blockNode
 // For more details, see https://en.bitcoin.it/wiki/BIP_0030 and
 // http://r6.ca/blog/20120206T005236Z.html.
 //
-// Decred: Check the stake transactions to make sure they don't have this txid
+// Hdfchain: Check the stake transactions to make sure they don't have this txid
 // too.
 func (b *BlockChain) checkDupTxs(txSet []*dcrutil.Tx, view *UtxoViewpoint) error {
 	if !checkForDuplicateHashes {
@@ -2111,7 +2111,7 @@ func checkRevocationInputs(tx *dcrutil.Tx, txHeight int64, view *UtxoViewpoint, 
 // requirements are met, detecting double spends, validating all values and
 // fees are in the legal range and the total output amount doesn't exceed the
 // input amount, and verifying the signatures to prove the spender was the
-// owner of the Decred and therefore allowed to spend them.  As it checks the
+// owner of the Hdfchain and therefore allowed to spend them.  As it checks the
 // inputs, it also calculates the total fees for the transaction and returns
 // that value.
 //
@@ -2125,7 +2125,7 @@ func CheckTransactionInputs(subsidyCache *standalone.SubsidyCache, tx *dcrutil.T
 	}
 
 	// -------------------------------------------------------------------
-	// Decred stake transaction testing.
+	// Hdfchain stake transaction testing.
 	// -------------------------------------------------------------------
 
 	// Perform additional checks on ticket purchase transactions such as
@@ -2168,7 +2168,7 @@ func CheckTransactionInputs(subsidyCache *standalone.SubsidyCache, tx *dcrutil.T
 	}
 
 	// -------------------------------------------------------------------
-	// Decred general transaction testing (and a few stake exceptions).
+	// Hdfchain general transaction testing (and a few stake exceptions).
 	// -------------------------------------------------------------------
 
 	txHash := tx.Hash()
@@ -2346,7 +2346,7 @@ func CheckTransactionInputs(subsidyCache *standalone.SubsidyCache, tx *dcrutil.T
 		// output values of the input transactions must not be negative
 		// or more than the max allowed per transaction.  All amounts
 		// in a transaction are in a unit value known as an atom.  One
-		// Decred is a quantity of atoms as defined by the AtomPerCoin
+		// Hdfchain is a quantity of atoms as defined by the AtomPerCoin
 		// constant.
 		originTxAtom := utxoEntry.AmountByIndex(originTxIndex)
 		if originTxAtom < 0 {

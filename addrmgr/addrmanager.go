@@ -1,5 +1,5 @@
 // Copyright (c) 2013-2014 The btcsuite developers
-// Copyright (c) 2015-2018 The Decred developers
+// Copyright (c) 2015-2018 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -30,7 +30,7 @@ import (
 const PeersFilename = "peers.json"
 
 // AddrManager provides a concurrency safe address manager for caching potential
-// peers on the Decred network.
+// peers on the Hdfchain network.
 type AddrManager struct {
 	mtx            sync.Mutex                               // main mutex used to sync methods
 	peersFile      string                                   // path of file to store peers in
@@ -1211,7 +1211,7 @@ func (a *AddrManager) IsPeerNaValid(localAddr, remoteAddr *wire.NetAddress) bool
 	return valid
 }
 
-// New returns a new Decred address manager.
+// New returns a new Hdfchain address manager.
 // Use Start to begin processing asynchronous address updates.
 // The address manager uses lookupFunc for necessary DNS lookups.
 func New(dataDir string, lookupFunc func(string) ([]net.IP, error)) *AddrManager {

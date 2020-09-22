@@ -1,5 +1,5 @@
 // Copyright (c) 2015-2016 The btcsuite developers
-// Copyright (c) 2016-2020 The Decred developers
+// Copyright (c) 2016-2020 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -519,7 +519,7 @@ type spentTxOut struct {
 
 // spentTxOutSerializeSize returns the number of bytes it would take to
 // serialize the passed stxo according to the format described above.
-// The amount is never encoded into spent transaction outputs in Decred
+// The amount is never encoded into spent transaction outputs in Hdfchain
 // because they're already encoded into the transactions, so skip them when
 // determining the serialization size.
 func spentTxOutSerializeSize(stxo *spentTxOut) int {
@@ -589,7 +589,7 @@ func decodeSpentTxOut(serialized []byte, stxo *spentTxOut, amount int64, height 
 	}
 
 	// Decode the compressed txout. We pass false for the amount flag,
-	// since in Decred we only need pkScript at most due to fraud proofs
+	// since in Hdfchain we only need pkScript at most due to fraud proofs
 	// already storing the decompressed amount.
 	_, scriptVersion, compScript, bytesRead, err :=
 		decodeCompressedTxOut(serialized[offset:], currentCompressionVersion,

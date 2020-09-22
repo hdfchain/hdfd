@@ -1,4 +1,4 @@
-// Copyright (c) 2018-2020 The Decred developers
+// Copyright (c) 2018-2020 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -123,8 +123,8 @@ func checkAddressPrefixesAreConsistent(t *testing.T, privateKeyPrefix string, pa
 	checkInterval(t, pk, 33, params.Name, params.PrivateKeyID)
 }
 
-// TestDecredNetworkSettings checks Network-specific settings
-func TestDecredNetworkSettings(t *testing.T) {
+// TestHdfchainNetworkSettings checks Network-specific settings
+func TestHdfchainNetworkSettings(t *testing.T) {
 	mainNetParams := chaincfg.MainNetParams()
 	testNet3Params := chaincfg.TestNet3Params()
 	simNetParams := chaincfg.SimNetParams()

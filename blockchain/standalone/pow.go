@@ -1,5 +1,5 @@
 // Copyright (c) 2013-2016 The btcsuite developers
-// Copyright (c) 2015-2019 The Decred developers
+// Copyright (c) 2015-2019 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -56,7 +56,7 @@ func HashToBig(hash *chainhash.Hash) *big.Int {
 // The formula to calculate N is:
 //	N = (-1^sign) * mantissa * 256^(exponent-3)
 //
-// This compact form is only used in Decred to encode unsigned 256-bit numbers
+// This compact form is only used in Hdfchain to encode unsigned 256-bit numbers
 // which represent difficulty targets, thus there really is not a need for a
 // sign bit, but it is implemented here to stay consistent with legacy code.
 func CompactToBig(compact uint32) *big.Int {
@@ -129,7 +129,7 @@ func BigToCompact(n *big.Int) uint32 {
 	return compact
 }
 
-// CalcWork calculates a work value from difficulty bits.  Decred increases the
+// CalcWork calculates a work value from difficulty bits.  Hdfchain increases the
 // difficulty for generating a block by decreasing the value which the generated
 // hash must be less than.  This difficulty target is stored in each block
 // header using a compact representation as described in the documentation for

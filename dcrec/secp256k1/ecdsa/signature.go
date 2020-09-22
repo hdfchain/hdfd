@@ -1,5 +1,5 @@
 // Copyright (c) 2013-2014 The btcsuite developers
-// Copyright (c) 2015-2020 The Decred developers
+// Copyright (c) 2015-2020 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -65,7 +65,7 @@ func NewSignature(r, s *secp256k1.ModNScalar) *Signature {
 // of the signature is less than or equal to the half order of the group.
 //
 // Note that the serialized bytes returned do not include the appended hash type
-// used in Decred signature scripts.
+// used in Hdfchain signature scripts.
 func (sig *Signature) Serialize() []byte {
 	// The format of a DER encoded signature is as follows:
 	//

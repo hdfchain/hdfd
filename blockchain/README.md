@@ -5,7 +5,7 @@ blockchain
 [![ISC License](https://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
 [![Doc](https://img.shields.io/badge/doc-reference-blue.svg)](https://pkg.go.dev/github.com/hdfchain/hdfd/blockchain/v3)
 
-Package blockchain implements Decred block handling and chain selection rules.
+Package blockchain implements Hdfchain block handling and chain selection rules.
 The test coverage is currently only around 60%, but will be increasing over
 time. See `test_coverage.txt` for the gocov coverage report.  Alternatively, if
 you are running a POSIX OS, you can run the `cov_report.sh` script for a
@@ -24,7 +24,7 @@ block chain.
 $ go get -u github.com/hdfchain/hdfd/blockchain
 ```
 
-## Decred Chain Processing Overview
+## Hdfchain Chain Processing Overview
 
 Before a block is allowed into the block chain, it must go through an intensive
 series of validation rules.  The following list serves as a general outline of

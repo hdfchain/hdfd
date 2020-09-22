@@ -1,5 +1,5 @@
 // Copyright (c) 2014 The btcsuite developers
-// Copyright (c) 2015-2019 The Decred developers
+// Copyright (c) 2015-2019 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -43,7 +43,7 @@ func (p *mockNetParams) HDPubKeyVersion() [4]byte {
 }
 
 // mockMainNetParams returns mock mainnet parameters to use throughout the
-// tests.  They match the Decred mainnet params as of the time this comment was
+// tests.  They match the Hdfchain mainnet params as of the time this comment was
 // written.
 func mockMainNetParams() *mockNetParams {
 	return &mockNetParams{
@@ -53,7 +53,7 @@ func mockMainNetParams() *mockNetParams {
 }
 
 // mockTestNetParams returns mock testnet parameters to use throughout the
-// tests.  They match the Decred testnet version 3 params as of the time this
+// tests.  They match the Hdfchain testnet version 3 params as of the time this
 // comment was written.
 func mockTestNetParams() *mockNetParams {
 	return &mockNetParams{
@@ -68,7 +68,7 @@ func TestBIP0032Vectors(t *testing.T) {
 	// The master seeds for each of the two test vectors in [BIP32].
 	//
 	// Note that the 3rd seed has been changed to ensure the condition it is
-	// intended to test applies with the modified hash function used in Decred.
+	// intended to test applies with the modified hash function used in Hdfchain.
 	//
 	// In particular, it results in hardened child 0 of the master key having
 	// a child key with leading zeroes.

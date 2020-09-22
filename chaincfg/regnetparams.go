@@ -1,4 +1,4 @@
-// Copyright (c) 2018-2019 The Decred developers
+// Copyright (c) 2018-2019 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -19,12 +19,12 @@ import (
 // RPC server tests.  On the other hand, the simulation test network is intended
 // for full integration tests between different applications such as wallets,
 // voting service providers, mining pools, block explorers, and other services
-// that build on Decred.
+// that build on Hdfchain.
 //
 // Since this network is only intended for unit testing, its values are subject
 // to change even if it would cause a hard fork.
 func RegNetParams() *Params {
-	// regNetPowLimit is the highest proof of work value a Decred block
+	// regNetPowLimit is the highest proof of work value a Hdfchain block
 	// can have for the regression test network.  It is the value 2^255 - 1.
 	regNetPowLimit := new(big.Int).Sub(new(big.Int).Lsh(bigOne, 255), bigOne)
 
@@ -301,7 +301,7 @@ func RegNetParams() *Params {
 		SLIP0044CoinType: 1, // SLIP0044, Testnet (all coins)
 		LegacyCoinType:   1,
 
-		// Decred PoS parameters
+		// Hdfchain PoS parameters
 		MinimumStakeDiff:        20000,
 		TicketPoolSize:          64,
 		TicketsPerBlock:         5,
@@ -321,7 +321,7 @@ func RegNetParams() *Params {
 		StakeMajorityMultiplier: 3,
 		StakeMajorityDivisor:    4,
 
-		// Decred organization related parameters
+		// Hdfchain organization related parameters
 		//
 		// Treasury address is a 3-of-3 P2SH going to a wallet with seed:
 		// aardvark adroitness aardvark adroitness

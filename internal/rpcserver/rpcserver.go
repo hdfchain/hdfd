@@ -1,5 +1,5 @@
 // Copyright (c) 2013-2016 The btcsuite developers
-// Copyright (c) 2015-2020 The Decred developers
+// Copyright (c) 2015-2020 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -1698,7 +1698,7 @@ func handleGenerate(ctx context.Context, s *Server, cmd interface{}) (interface{
 func handleGetAddedNodeInfo(_ context.Context, s *Server, cmd interface{}) (interface{}, error) {
 	c := cmd.(*types.GetAddedNodeInfoCmd)
 
-	// Retrieve a list of persistent (added) peers from the Decred server
+	// Retrieve a list of persistent (added) peers from the Hdfchain server
 	// and filter the list of peers per the specified address (if any).
 	peers := s.cfg.ConnMgr.AddedNodeInfo()
 	if c.Node != nil {
@@ -3513,7 +3513,7 @@ func handleGetWork(ctx context.Context, s *Server, cmd interface{}) (interface{}
 	if !s.cfg.AllowUnsyncedMining && s.cfg.ConnMgr.ConnectedCount() == 0 {
 		return nil, &dcrjson.RPCError{
 			Code:    dcrjson.ErrRPCClientNotConnected,
-			Message: "Decred is not connected",
+			Message: "Hdfchain is not connected",
 		}
 	}
 
@@ -3523,7 +3523,7 @@ func handleGetWork(ctx context.Context, s *Server, cmd interface{}) (interface{}
 	if !s.cfg.AllowUnsyncedMining && bestHeight != 0 && !s.cfg.Chain.IsCurrent() {
 		return nil, &dcrjson.RPCError{
 			Code:    dcrjson.ErrRPCClientInInitialDownload,
-			Message: "Decred is downloading blocks...",
+			Message: "Hdfchain is downloading blocks...",
 		}
 	}
 
@@ -4860,7 +4860,7 @@ func handleVerifyMessage(_ context.Context, s *Server, cmd interface{}) (interfa
 	// Validate the signature - this just shows that it was valid at all.
 	// we will compare it with the key next.
 	var buf bytes.Buffer
-	wire.WriteVarString(&buf, 0, "Decred Signed Message:\n")
+	wire.WriteVarString(&buf, 0, "Hdfchain Signed Message:\n")
 	wire.WriteVarString(&buf, 0, c.Message)
 	expectedMessageHash := chainhash.HashB(buf.Bytes())
 	pk, wasCompressed, err := ecdsa.RecoverCompact(sig,

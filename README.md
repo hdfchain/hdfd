@@ -6,12 +6,12 @@ hdfd
 [![Doc](https://img.shields.io/badge/doc-reference-blue.svg)](https://pkg.go.dev/github.com/hdfchain/hdfd)
 [![Go Report Card](https://goreportcard.com/badge/github.com/hdfchain/hdfd)](https://goreportcard.com/report/github.com/hdfchain/hdfd)
 
-## Decred Overview
+## Hdfchain Overview
 
-Decred is a blockchain-based cryptocurrency with a strong focus on community
+Hdfchain is a blockchain-based cryptocurrency with a strong focus on community
 input, open governance, and sustainable funding for development. It utilizes a
 hybrid proof-of-work and proof-of-stake mining system to ensure that a small
-group cannot dominate the flow of transactions or make changes to Decred without
+group cannot dominate the flow of transactions or make changes to Hdfchain without
 the input of the community.  A unit of the currency is called a `hdfchain` (HDF).
 
 https://clkj.ltd
@@ -22,31 +22,31 @@ https://clkj.ltd/downloads/
 
 Core software:
 
-* hdfd: a Decred full node daemon (this)
-* [hdfwallet](https://github.com/hdfchain/hdfwallet): a CLI Decred wallet daemon
+* hdfd: a Hdfchain full node daemon (this)
+* [hdfwallet](https://github.com/hdfchain/hdfwallet): a CLI Hdfchain wallet daemon
 * [hdfctl](https://github.com/hdfchain/hdfctl): a CLI client for hdfd and hdfwallet
 
 Bundles:
 
-* [Decrediton](https://github.com/hdfchain/hdfchainton): a GUI bundle for `hdfd`
+* [Hdfchainiton](https://github.com/hdfchain/hdfchainton): a GUI bundle for `hdfd`
   and `hdfwallet`
 * [CLI app suite](https://github.com/hdfchain/hdfchain-release/releases/tag/v1.5.1):
   a CLI bundle for `hdfd` and `hdfwallet`
 
 ## What is hdfd?
 
-hdfd is a full node implementation of Decred written in Go (golang).
+hdfd is a full node implementation of Hdfchain written in Go (golang).
 
-It acts as a fully-validating chain daemon for the Decred cryptocurrency.  hdfd
-maintains the entire past transactional ledger of Decred and allows relaying of
-transactions to other Decred nodes around the world.
+It acts as a fully-validating chain daemon for the Hdfchain cryptocurrency.  hdfd
+maintains the entire past transactional ledger of Hdfchain and allows relaying of
+transactions to other Hdfchain nodes around the world.
 
 This software is currently under active development.  It is extremely stable and
 has been in production use since February 2016.
 
 It important to note that hdfd does *NOT* include wallet functionality.  Users
 who desire a wallet will need to use [hdfwallet(CLI)](https://github.com/hdfchain/hdfwallet)
-or [Decrediton(GUI)](https://github.com/hdfchain/hdfchainton).
+or [Hdfchainiton(GUI)](https://github.com/hdfchain/hdfchainton).
 
 ## What is a full node?
 
@@ -55,17 +55,17 @@ that fully validates all transactions and blocks, as opposed to trusting a 3rd
 party.  In addition to validating transactions and blocks, nearly all full nodes
 also participate in relaying transactions and blocks to other full nodes around
 the world, thus forming the peer-to-peer network that is the backbone of the
-Decred cryptocurrency.
+Hdfchain cryptocurrency.
 
 The full node distinction is important, since full nodes are not the only type
-of software participating in the Decred peer network. For instance, there are
+of software participating in the Hdfchain peer network. For instance, there are
 'lightweight nodes' which rely on full nodes to serve the transactions, blocks,
 and cryptographic proofs they require to function, as well as relay their
 transactions to the rest of the global network.
 
 ## Why run hdfd?
 
-As described in the previous section, the Decred cryptocurrency relies on having
+As described in the previous section, the Hdfchain cryptocurrency relies on having
 a peer-to-peer network of nodes that fully validate all transactions and blocks
 and then relay them to other full nodes.
 
@@ -83,7 +83,7 @@ In terms of individual benefits, since hdfd fully validates every block and
 transaction, it provides the highest security and privacy possible when used in
 conjunction with a wallet that also supports directly connecting to it in full
 validation mode, such as [hdfwallet (CLI)](https://github.com/hdfchain/hdfwallet)
-and [Decrediton (GUI)](https://github.com/hdfchain/hdfchainton).
+and [Hdfchainiton (GUI)](https://github.com/hdfchain/hdfchainton).
 
 ## Minimum Recommended Specifications (hdfd only)
 
@@ -111,7 +111,7 @@ Also, make sure your firewall is configured to allow inbound connections to port
 ### Binaries (Windows/Linux/macOS)
 
 Binary releases are provided for common operating systems and architectures.
-The easiest method is to download Decrediton from the link below, which will
+The easiest method is to download Hdfchainiton from the link below, which will
 include hdfd. Advanced users may prefer the Command-line app suite, which
 includes hdfd and hdfwallet.
 
@@ -119,7 +119,7 @@ https://clkj.ltd/downloads/
 
 * How to verify binaries before installing: https://docs.clkj.ltd/advanced/verifying-binaries/
 * How to install the CLI Suite: https://docs.clkj.ltd/wallets/cli/cli-installation/
-* How to install Decrediton: https://docs.clkj.ltd/wallets/hdfchainton/hdfchainton-setup/
+* How to install Hdfchainiton: https://docs.clkj.ltd/wallets/hdfchainton/hdfchainton-setup/
 
 ### Build from source (all platforms)
 
@@ -232,7 +232,7 @@ docker exec -ti hdfd-1 hdfctl getbestblock
 ## Running Tests
 
 All tests and linters may be run using the script `run_tests.sh`.  Generally,
-Decred only supports the current and previous major versions of Go.
+Hdfchain only supports the current and previous major versions of Go.
 
 ```
 ./run_tests.sh

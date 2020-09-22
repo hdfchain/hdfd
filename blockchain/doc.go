@@ -1,13 +1,13 @@
 // Copyright (c) 2013-2014 The btcsuite developers
-// Copyright (c) 2015-2016 The Decred developers
+// Copyright (c) 2015-2016 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
 /*
-Package blockchain implements Decred block handling and chain selection rules.
+Package blockchain implements Hdfchain block handling and chain selection rules.
 
-The Decred block handling and chain selection rules are an integral, and quite
-likely the most important, part of hdfchain.  At its core, Decred is a distributed
+The Hdfchain block handling and chain selection rules are an integral, and quite
+likely the most important, part of hdfchain.  At its core, Hdfchain is a distributed
 consensus of which blocks are valid and which ones will comprise the main block
 chain (public ledger) that ultimately determines accepted transactions, so it is
 extremely important that fully validating nodes agree on all rules.
@@ -17,12 +17,12 @@ block chain according to the aforementioned rules.  It includes functionality
 such as rejecting duplicate blocks, ensuring blocks and transactions follow all
 rules, and best chain selection along with reorganization.
 
-Since this package does not deal with other Decred specifics such as network
+Since this package does not deal with other Hdfchain specifics such as network
 communication or wallets, it provides a notification system which gives the
 caller a high level of flexibility in how they want to react to certain events
 such as newly connected main chain blocks which might result in wallet updates.
 
-Decred Chain Processing Overview
+Hdfchain Chain Processing Overview
 
 Before a block is allowed into the block chain, it must go through an intensive
 series of validation rules.  The following list serves as a general outline of

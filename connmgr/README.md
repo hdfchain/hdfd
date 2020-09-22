@@ -5,7 +5,7 @@ connmgr
 [![ISC License](https://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
 [![Doc](https://img.shields.io/badge/doc-reference-blue.svg)](https://pkg.go.dev/github.com/hdfchain/hdfd/connmgr/v3)
 
-Package connmgr implements a generic Decred network connection manager.
+Package connmgr implements a generic Hdfchain network connection manager.
 
 ## Overview
 

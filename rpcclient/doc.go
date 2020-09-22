@@ -1,14 +1,14 @@
 // Copyright (c) 2014 The btcsuite developers
-// Copyright (c) 2016-2017 The Decred developers
+// Copyright (c) 2016-2017 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
 /*
-Package rpcclient implements a websocket-enabled Decred JSON-RPC client.
+Package rpcclient implements a websocket-enabled Hdfchain JSON-RPC client.
 
 This client provides a robust and easy to use client for interfacing
-with a Decred RPC server that uses a mostly btcd/bitcoin core
-style Decred JSON-RPC API.  This client has been tested with hdfd
+with a Hdfchain RPC server that uses a mostly btcd/bitcoin core
+style Hdfchain JSON-RPC API.  This client has been tested with hdfd
 (https://github.com/hdfchain/hdfd) and hdfwallet
 (https://github.com/hdfchain/hdfwallet).
 

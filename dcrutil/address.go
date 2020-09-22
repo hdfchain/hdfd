@@ -1,5 +1,5 @@
 // Copyright (c) 2013, 2014 The btcsuite developers
-// Copyright (c) 2015-2020 The Decred developers
+// Copyright (c) 2015-2020 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -401,7 +401,7 @@ func (a *AddressSecpPubKey) serialize() []byte {
 // pay-to-pubkey-hash.  Note that the public key format (uncompressed,
 // compressed, etc) will change the resulting address.  This is expected since
 // pay-to-pubkey-hash is a hash of the serialized public key which obviously
-// differs with the format.  At the time of this writing, most Decred addresses
+// differs with the format.  At the time of this writing, most Hdfchain addresses
 // are pay-to-pubkey-hash constructed from the compressed public key.
 //
 // Part of the Address interface.
@@ -443,7 +443,7 @@ func (a *AddressSecpPubKey) Format() PubKeyFormat {
 // pay-to-pubkey-hash address.  Note that the public key format (uncompressed,
 // compressed, etc) will change the resulting address.  This is expected since
 // pay-to-pubkey-hash is a hash of the serialized public key which obviously
-// differs with the format.  At the time of this writing, most Decred addresses
+// differs with the format.  At the time of this writing, most Hdfchain addresses
 // are pay-to-pubkey-hash constructed from the uncompressed public key.
 func (a *AddressSecpPubKey) AddressPubKeyHash() *AddressPubKeyHash {
 	addr := &AddressPubKeyHash{netID: a.pubKeyHashID,
@@ -581,7 +581,7 @@ func (a *AddressSecSchnorrPubKey) serialize() []byte {
 // pay-to-pubkey-hash.  Note that the public key format (uncompressed,
 // compressed, etc) will change the resulting address.  This is expected since
 // pay-to-pubkey-hash is a hash of the serialized public key which obviously
-// differs with the format.  At the time of this writing, most Decred addresses
+// differs with the format.  At the time of this writing, most Hdfchain addresses
 // are pay-to-pubkey-hash constructed from the compressed public key.
 //
 // Part of the Address interface.

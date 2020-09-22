@@ -1,5 +1,5 @@
 // Copyright (c) 2013-2017 The btcsuite developers
-// Copyright (c) 2015-2019 The Decred developers
+// Copyright (c) 2015-2019 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -419,7 +419,7 @@ func checkScriptParses(scriptVersion uint16, script []byte) error {
 
 // IsUnspendable returns whether the passed public key script is unspendable, or
 // guaranteed to fail at execution.  This allows inputs to be pruned instantly
-// when entering the UTXO set. In Decred, all zero value outputs are unspendable.
+// when entering the UTXO set. In Hdfchain, all zero value outputs are unspendable.
 //
 // NOTE: This function is only valid for version 0 scripts.  Since the function
 // does not accept a script version, the results are undefined for other script

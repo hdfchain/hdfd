@@ -1,5 +1,5 @@
 // Copyright (c) 2013-2015 The btcsuite developers
-// Copyright (c) 2015-2020 The Decred developers
+// Copyright (c) 2015-2020 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -36,7 +36,7 @@ func (msg *MsgGetData) AddInvVect(iv *InvVect) error {
 	return nil
 }
 
-// BtcDecode decodes r using the Decred protocol encoding into the receiver.
+// BtcDecode decodes r using the Hdfchain protocol encoding into the receiver.
 // This is part of the Message interface implementation.
 func (msg *MsgGetData) BtcDecode(r io.Reader, pver uint32) error {
 	const op = "MsgGetData.BtcDecode"
@@ -67,7 +67,7 @@ func (msg *MsgGetData) BtcDecode(r io.Reader, pver uint32) error {
 	return nil
 }
 
-// BtcEncode encodes the receiver to w using the Decred protocol encoding.
+// BtcEncode encodes the receiver to w using the Hdfchain protocol encoding.
 // This is part of the Message interface implementation.
 func (msg *MsgGetData) BtcEncode(w io.Writer, pver uint32) error {
 	const op = "MsgGetData.BtcEncode"
@@ -108,7 +108,7 @@ func (msg *MsgGetData) MaxPayloadLength(pver uint32) uint32 {
 		(MaxInvPerMsg * maxInvVectPayload)
 }
 
-// NewMsgGetData returns a new Decred getdata message that conforms to the
+// NewMsgGetData returns a new Hdfchain getdata message that conforms to the
 // Message interface.  See MsgGetData for details.
 func NewMsgGetData() *MsgGetData {
 	return &MsgGetData{
@@ -116,7 +116,7 @@ func NewMsgGetData() *MsgGetData {
 	}
 }
 
-// NewMsgGetDataSizeHint returns a new Decred getdata message that conforms to
+// NewMsgGetDataSizeHint returns a new Hdfchain getdata message that conforms to
 // the Message interface.  See MsgGetData for details.  This function differs
 // from NewMsgGetData in that it allows a default allocation size for the
 // backing array which houses the inventory vector list.  This allows callers

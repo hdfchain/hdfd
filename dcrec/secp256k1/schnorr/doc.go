@@ -1,4 +1,4 @@
-// Copyright (c) 2020 The Decred developers
+// Copyright (c) 2020 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -51,12 +51,12 @@ which means there are a number of variations that are not compatible with each
 other.
 
 In addition, many of the standardization attempts have various disadvantages
-that make them unsuitable for use in Decred.  Some of these details and some
+that make them unsuitable for use in Hdfchain.  Some of these details and some
 insight into the design decisions made are discussed further in the README.md
 file.
 
 Consequently, this package implements a custom Schnorr-based signature scheme
-named EC-Schnorr-HDFv0 suitable for use in Decred.
+named EC-Schnorr-HDFv0 suitable for use in Hdfchain.
 
 The following provides a high-level overview of the key design features of the
 scheme:
@@ -88,10 +88,10 @@ to the signature scheme would invalidate existing uses.  Therefore changes in
 this regard will need to come in the form of a v1 signature scheme and be
 accompanied by the necessary consensus updates.
 
-Schnorr use in Decred
+Schnorr use in Hdfchain
 
 At the time of this writing, Schnorr signatures are not yet in widespread use on
-the Decred network, largely due to the current lack of support in wallets and
+the Hdfchain network, largely due to the current lack of support in wallets and
 infrastructure for secure multi-party and threshold signatures.
 
 However, the consensus rules and scripting engine supports the necessary

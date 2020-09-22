@@ -1,5 +1,5 @@
 // Copyright (c) 2017 The btcsuite developers
-// Copyright (c) 2019 The Decred developers
+// Copyright (c) 2019 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -388,7 +388,7 @@ func BenchmarkEncodeDecodeCycle(b *testing.B) {
 
 	// Use a fixed hrp for the tests. This should generate an encoded bech32
 	// string of size 90 (the maximum allowed by BIP-173).
-	hrp := "dcr"
+	hrp := "hdf"
 
 	// Begin the benchmark. Given that we test one roundtrip per iteration
 	// (that is, one Encode() and one Decode() operation), we expect at most

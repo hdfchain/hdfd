@@ -5,7 +5,7 @@ hdkeychain
 [![ISC License](https://img.shields.io/badge/license-ISC-blue.svg)](http://copyfree.org)
 [![Doc](https://img.shields.io/badge/doc-reference-blue.svg)](https://pkg.go.dev/github.com/hdfchain/hdfd/hdkeychain/v3)
 
-Package hdkeychain provides an API for Decred hierarchical deterministic
+Package hdkeychain provides an API for Hdfchain hierarchical deterministic
 extended keys (based on BIP0032).
 
 A comprehensive suite of tests is provided to ensure proper functionality.

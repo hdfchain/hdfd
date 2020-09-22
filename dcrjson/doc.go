@@ -1,10 +1,10 @@
 // Copyright (c) 2015 The btcsuite developers
-// Copyright (c) 2015-2019 The Decred developers
+// Copyright (c) 2015-2019 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
 /*
-Package dcrjson provides infrastructure for working with Decred JSON-RPC APIs.
+Package dcrjson provides infrastructure for working with Hdfchain JSON-RPC APIs.
 
 When communicating via the JSON-RPC protocol, all requests and responses must be
 marshalled to and from the wire in the appropriate format.  This package

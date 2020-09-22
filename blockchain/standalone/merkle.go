@@ -1,4 +1,4 @@
-// Copyright (c) 2019 The Decred developers
+// Copyright (c) 2019 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -75,7 +75,7 @@ func CalcMerkleRootInPlace(leaves []chainhash.Hash) chainhash.Hash {
 // and returns the resulting merkle root.
 //
 // A merkle tree is a tree in which every non-leaf node is the hash of its
-// children nodes.  A diagram depicting how this works for Decred transactions
+// children nodes.  A diagram depicting how this works for Hdfchain transactions
 // where h(x) is a blake256 hash follows:
 //
 //	         root = h1234 = h(h12 + h34)

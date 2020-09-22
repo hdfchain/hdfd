@@ -1,5 +1,5 @@
 // Copyright (c) 2015-2016 The btcsuite developers
-// Copyright (c) 2016 The Decred developers
+// Copyright (c) 2016 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -16,7 +16,7 @@ storage, and strict checksums in key areas to ensure data integrity.
 A quick overview of the features database provides are as follows:
 
  - Key/value metadata store
- - Decred block storage
+ - Hdfchain block storage
  - Efficient retrieval of block headers and regions (transactions, scripts, etc)
  - Read-only and read-write transactions with both manual and managed modes
  - Nested buckets

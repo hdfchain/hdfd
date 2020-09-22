@@ -1,5 +1,5 @@
 // Copyright (c) 2014-2016 The btcsuite developers
-// Copyright (c) 2015-2020 The Decred developers
+// Copyright (c) 2015-2020 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -1337,7 +1337,7 @@ mempoolLoop:
 		}
 
 		// This isn't very expensive, but we do this check a number of times.
-		// Consider caching this in the mempool in the future. - Decred
+		// Consider caching this in the mempool in the future. - Hdfchain
 		numP2SHSigOps, err := blockchain.CountP2SHSigOps(tx, false,
 			isSSGen, blockUtxos)
 		if err != nil {
@@ -1649,7 +1649,7 @@ mempoolLoop:
 	// ensure the transaction is not a duplicate transaction (paying the
 	// same value to the same public key address would otherwise be an
 	// identical transaction for block version 1).
-	// Decred: We need to move this downwards because of the requirements
+	// Hdfchain: We need to move this downwards because of the requirements
 	// to incorporate voters and potential voters.
 	coinbaseScript := []byte{0x00, 0x00}
 	coinbaseScript = append(coinbaseScript, []byte(coinbaseFlags)...)

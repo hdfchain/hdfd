@@ -1,5 +1,5 @@
 // Copyright (c) 2013-2017 The btcsuite developers
-// Copyright (c) 2015-2020 The Decred developers
+// Copyright (c) 2015-2020 The Hdfchain developers
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
@@ -459,8 +459,8 @@ func TestPayToAddrScript(t *testing.T) {
 				"f9137f23c2c409273eb16e65 CHECKSIG",
 			nil,
 		},
-		// pay-to-pubkey address on mainnet. for Decred this would
-		// be uncompressed, but standard for Decred is 33 byte
+		// pay-to-pubkey address on mainnet. for Hdfchain this would
+		// be uncompressed, but standard for Hdfchain is 33 byte
 		// compressed public keys.
 		{
 			p2pkUncompressedMain,
@@ -564,7 +564,7 @@ func TestMultiSigScript(t *testing.T) {
 			ErrTooManyRequiredSigs,
 		},
 		{
-			// By default compressed pubkeys are used in Decred.
+			// By default compressed pubkeys are used in Hdfchain.
 			[]*dcrutil.AddressSecpPubKey{
 				p2pkUncompressedMain.(*dcrutil.AddressSecpPubKey),
 			},
