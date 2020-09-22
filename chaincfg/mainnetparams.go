@@ -349,7 +349,7 @@ func MainNetParams() *Params {
 		BlockOneLedger:              tokenPayouts_MainNetParams(),
 
 		seeders: []string{
-			"mainnet-seed-1.clkj.ltd",
+			"mcshop.qinmaoyi.cn",
 			"mainnet-seed-2.clkj.ltd",
 		},
 	}

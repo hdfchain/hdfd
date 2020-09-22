@@ -202,7 +202,7 @@ func (b *Block) Transactions() []*Tx {
 
 // STransactions returns a slice of wrapped stake transactions (dcrutil.Tx) for all
 // stake transactions in the Block.  This is nearly equivalent to accessing the raw
-// transactions (dcrwire.MsgTx) in the underlying wire.MsgBlock, however it
+// transactions (hdfwire.MsgTx) in the underlying wire.MsgBlock, however it
 // instead provides easy access to wrapped versions (util.Tx) of them.
 func (b *Block) STransactions() []*Tx {
 	// Return transactions if they have ALL already been generated.  This
