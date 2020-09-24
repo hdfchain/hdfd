@@ -73,8 +73,7 @@ func TestNet3Params() *Params {
 		Net:         wire.TestNet3,
 		DefaultPort: "19108",
 		DNSSeeds: []DNSSeed{
-			{"testnet-seed.hdfchain.clkj.ltd", true},
-			{"testnet-seed.qinmaoyi.cn", true},
+			{"testnet-seed.wpexr.com", true},
 			{"testnet-seed.clkj.ltd", true},
 		},
 
@@ -245,7 +244,6 @@ func TestNet3Params() *Params {
 
 		seeders: []string{
 			"testnet-seed-1.clkj.ltd",
-			"testnet-seed-2.clkj.ltd",
 		},
 	}
 }

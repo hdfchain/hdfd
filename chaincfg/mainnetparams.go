@@ -78,8 +78,7 @@ func MainNetParams() *Params {
 		Net:         wire.MainNet,
 		DefaultPort: "9108",
 		DNSSeeds: []DNSSeed{
-			{"mainnet-seed.hdfchain.clkj.ltd", true},
-			{"mcshop.qinmaoyi.cn", true},
+			{"mainnet-seed.wpexr.com", true},
 			{"mainnet-seed.clkj.ltd", true},
 		},
 
@@ -349,8 +348,7 @@ func MainNetParams() *Params {
 		BlockOneLedger:              tokenPayouts_MainNetParams(),
 
 		seeders: []string{
-			"mcshop.qinmaoyi.cn",
-			"mainnet-seed-2.clkj.ltd",
+			"mainnet-seed-1.clkj.ltd",
 		},
 	}
 }
