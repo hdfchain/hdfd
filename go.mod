@@ -19,7 +19,7 @@ require (
 	github.com/hdfchain/hdfd/connmgr/v3 v3.0.0-20200215031403-6b2ce76f0986
 	github.com/hdfchain/hdfd/crypto/ripemd160 v1.0.0
 	github.com/hdfchain/hdfd/database/v2 v2.0.1
-	github.com/hdfchain/hdfd/dcrec v1.0.0
+	github.com/hdfchain/hdfd/dcrec v1.0.1
 	github.com/hdfchain/hdfd/dcrec/secp256k1/v3 v3.0.0-20200215031403-6b2ce76f0986
 	github.com/hdfchain/hdfd/dcrjson/v3 v3.0.1
 	github.com/hdfchain/hdfd/dcrutil/v3 v3.0.0-20200503044000-76f6906e50e5

@@ -6,7 +6,7 @@ require (
 	github.com/hdfchain/hdfd/chaincfg/chainhash v1.0.2
 	github.com/hdfchain/hdfd/chaincfg/v3 v3.0.0-20200215031403-6b2ce76f0986
 	github.com/hdfchain/hdfd/database/v2 v2.0.1
-	github.com/hdfchain/hdfd/dcrec v1.0.0
+	github.com/hdfchain/hdfd/dcrec v1.0.1
 	github.com/hdfchain/hdfd/dcrutil/v3 v3.0.0-20200215031403-6b2ce76f0986
 	github.com/hdfchain/hdfd/txscript/v3 v3.0.0-20200215031403-6b2ce76f0986
 	github.com/hdfchain/hdfd/wire v1.3.0

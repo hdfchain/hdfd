@@ -1,0 +1,5 @@
+github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
+github.com/hdfchain/hdfd/chaincfg/chainhash v1.0.2/go.mod h1:kCjYF9SlOetfhs/IFksdKrUk01ay92H1xs+DU2G0ZBk=
+github.com/hdfchain/hdfd/crypto/blake256 v1.0.1/go.mod h1:/5g0EgHKzSSWel3glc/KDGh4AH9gLT+3N0qjc8lQHLs=
+github.com/hdfchain/hdfd/wire v1.3.0/go.mod h1:c6DWmCqdsjCtKfIQ1ym8UMaz0wGUVrs6yPQIPBggBGY=
+github.com/hdfchain/slog v1.0.0/go.mod h1:zYX/hif1i75DNoBnr9VNV2fGlBrTZUNfpBJUJpZR/LE=

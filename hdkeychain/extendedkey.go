@@ -27,7 +27,7 @@ import (
 const (
 	// RecommendedSeedLen is the recommended length in bytes for a seed
 	// to a master node.
-	RecommendedSeedLen = 32 // 256 bits
+	RecommendedSeedLen = 32 // 128 bits by fisher
 
 	// HardenedKeyStart is the index at which a hardened key starts.  Each
 	// extended key has 2^31 normal child keys and 2^31 hardened child keys.
@@ -37,7 +37,7 @@ const (
 
 	// MinSeedBytes is the minimum number of bytes allowed for a seed to
 	// a master node.
-	MinSeedBytes = 16 // 128 bits
+	MinSeedBytes = 16 // 128 bits fisher
 
 	// MaxSeedBytes is the maximum number of bytes allowed for a seed to
 	// a master node.
@@ -254,7 +254,7 @@ func (k *ExtendedKey) Child(i uint32) (*ExtendedKey, error) {
 	//
 	// For normal children:
 	//   serP(parentPubKey) || ser32(i)
-	keyLen := 33
+	keyLen := 33 //fisher
 	data := make([]byte, keyLen+4)
 	if isChildHardened {
 		// Case #1.
