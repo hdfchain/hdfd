@@ -51,7 +51,7 @@ func TestBlockNodeHeader(t *testing.T) {
 		SBits:        123456789,
 		Height:       1,
 		Size:         393216,
-		Timestamp:    time.Unix(1454954400, 0),
+		Timestamp:    time.Unix(1602151200, 0),
 		Nonce:        7,
 		ExtraData:    [32]byte{0xbb},
 		StakeVersion: 5,
